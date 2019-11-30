@@ -10,7 +10,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input class="form-control" placeholder="RA" type="text">
+                <input class="form-control" name="ra" placeholder="RA" type="text" minlength="6" maxlength="6">
             </div>
         </div>
         <div class="form-group">
@@ -18,7 +18,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input class="form-control" placeholder="Senha" type="password">
+                <input class="form-control" name="password" placeholder="Senha" type="password" maxlength="4">
             </div>
         </div>
         <div class="custom-control custom-control-alternative custom-checkbox">

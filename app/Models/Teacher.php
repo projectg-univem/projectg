@@ -9,9 +9,9 @@ class Teacher extends Authenticatable
 {
     use Notifiable;
 
-    protected $table = 'teachers';
-
     protected $guard = 'teacher';
+
+    protected $table = 'teachers';
 
     protected $fillable = [
         'ra', 'name', 'email', 'password'

@@ -1,9 +1,9 @@
 <?php
 
-use ProjectG\Models\User;
+use ProjectG\Models\Student;
 use Illuminate\Database\Seeder;
 
-class UsersTableSeeder extends Seeder
+class StudentsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,11 +12,11 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
+        Student::create([
             'ra'       => '123456',
             'name'     => 'Aluno Univem',
             'email'    => 'aluno@univem.edu.br',
-            'password' => bcrypt('1234'),
+            'password' => Hash::make('1234'),
         ]);
     }
 }

@@ -14,8 +14,8 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'user',
-        'passwords' => 'users',
+        'guard' => 'student',
+        'passwords' => 'students',
     ],
 
     /*
@@ -36,9 +36,9 @@ return [
     */
 
     'guards' => [
-        'user' => [
+        'student' => [
             'driver'   => 'session',
-            'provider' => 'users',
+            'provider' => 'students',
         ],
 
         'teacher' => [
@@ -71,9 +71,9 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'students' => [
             'driver' => 'eloquent',
-            'model'  => ProjectG\Models\User::class,
+            'model'  => ProjectG\Models\Student::class,
         ],
 
         'teachers' => [
@@ -103,8 +103,8 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
+        'students' => [
+            'provider' => 'students',
             'table'    => 'password_resets',
             'expire'   => 60,
             'throttle' => 60,

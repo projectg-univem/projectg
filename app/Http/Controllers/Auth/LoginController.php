@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/painel';
+    protected $redirectTo = '/aluno';
 
     /**
      * Login username to be used by the controller.

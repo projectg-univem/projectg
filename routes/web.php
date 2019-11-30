@@ -4,10 +4,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::prefix('painel')->group(function () {
+Route::prefix('aluno')->group(function () {
     Route::middleware('auth')->group(function () {
-        Route::get('/', 'Student\UserController@getDashboard')->name('get.user.dashboard');
-        
+        Route::get('/', 'Student\StudentController@getDashboard')->name('get.student.dashboard');
+
+        Route::get('/logout', function () {
+            Auth::logout();
+            return redirect()->route('login');
+        });
     });
 });
 
@@ -17,5 +21,10 @@ Route::prefix('professor')->group(function() {
 
     Route::middleware('auth:teacher')->group(function () {
         Route::get('/', 'Teacher\TeacherController@getDashboard')->name('get.teacher.dashboard');
+
+        Route::get('/logout', function () {
+            Auth::guard('teacher')->logout();
+            return redirect()->route('get.teacher.login');
+        })->name('get.teacher.logout');
     });
 });
