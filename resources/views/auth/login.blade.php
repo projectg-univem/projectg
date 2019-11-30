@@ -4,6 +4,7 @@
 
 @section('content')
     <form role="form" method="post" action="{{ route('login') }}">
+        @csrf
         <div class="form-group mb-3">
             <div class="input-group input-group-alternative">
                 <div class="input-group-prepend">

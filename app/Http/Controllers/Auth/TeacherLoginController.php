@@ -3,8 +3,8 @@
 namespace ProjectG\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facedes\Auth;
-use Illuminate\Support\Facedes\Validator;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 use ProjectG\Http\Controllers\Controller;
 
 class TeacherLoginController extends Controller
@@ -17,7 +17,7 @@ class TeacherLoginController extends Controller
     public function login(Request $request)
     {
         $validate = Validator::make($request->all(), [
-            'ra'       => 'required|string|size:6|regex:/^[0-9]*$/"',
+            'ra'       => 'required|string|size:6|regex:/^[0-9]*$/',
             'password' => 'required|string|size:4'
         ],
         [
@@ -36,6 +36,7 @@ class TeacherLoginController extends Controller
         $credentials = $request->only('ra', 'password');
 
         if (Auth::guard('teacher')->attempt($credentials)) {
+            dd('Entrou aqui');
             return redirect()->intended(route('get.teacher.dashboard'));
         }
 
