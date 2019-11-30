@@ -11,4 +11,9 @@ class TeacherController extends Controller
     {
         return view('teacher.dashboard');
     }
+
+    public function getTasks() 
+    {
+    	return view('teacher.tasks');
+    }
 }

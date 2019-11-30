@@ -21,6 +21,8 @@ Route::prefix('professor')->group(function() {
 
     Route::middleware('auth:teacher')->group(function () {
         Route::get('/', 'Teacher\TeacherController@getDashboard')->name('get.teacher.dashboard');
+        Route::get('/tarefas', 'Teacher\TeacherController@getTasks')->name('get.teacher.tasks');
+        
 
         Route::get('/logout', function () {
             Auth::guard('teacher')->logout();
