@@ -63,7 +63,7 @@
                         <span>Meu perfil</span>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a href="{{ route('teacher.logout') }}" class="dropdown-item">
+                    <a href="{{ route('get.teacher.logout') }}" class="dropdown-item">
                         <i class="ni ni-user-run"></i>
                         <span>Sair</span>
                     </a>

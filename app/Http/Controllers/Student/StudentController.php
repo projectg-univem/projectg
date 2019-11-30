@@ -11,4 +11,19 @@ class StudentController extends Controller
     {
         return view('student.dashboard');
     }
+
+    public function getTasks() 
+    {
+    	return view('student.tasks');
+    }
+
+	public function getProfile() 
+    {
+    	return view('student.profile');
+    }
+
+    public function getQuestions() 
+    {
+    	return view('student.questions');
+    }
 }

@@ -16,4 +16,14 @@ class TeacherController extends Controller
     {
     	return view('teacher.tasks');
     }
+
+	public function getProfile() 
+    {
+    	return view('teacher.profile');
+    }
+
+    public function getQuestions() 
+    {
+    	return view('teacher.questions');
+    }
 }

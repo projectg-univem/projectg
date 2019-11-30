@@ -2,7 +2,7 @@
 
 @section('content')
 	<h1>Escrevi e sai correndo, pau no cu de quem ta lendo</h1>
-	<h6 class="heading-small text-muted mb-4">Dúvidas</h6>
+	<h6 class="heading-small text-muted mb-4">About me</h6>
 	<div class="card-header bg-white border-0">
 		<div class="row align-items-center">
 			<div class="col-8">
