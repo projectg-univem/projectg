@@ -35,11 +35,13 @@ class TeacherLoginController extends Controller
 
         $credentials = $request->only('ra', 'password');
 
+        dd($credentials);
+
         if (Auth::guard('teacher')->attempt($credentials)) {
-            dd('Entrou aqui');
             return redirect()->intended(route('get.teacher.dashboard'));
         }
 
+        dd('chegou');
         return back()->withErrors(['ra' => 'Credenciais incorretas.']);
     }
 

@@ -16,7 +16,7 @@ class TeachersTableSeeder extends Seeder
             'ra'       => '654321',
             'name'     => 'Professor Univem',
             'email'    => 'professor@univem.edu.br',
-            'password' => bcrypt('4321'),
+            'password' => Hash::make('4321'),
         ]);
     }
 }

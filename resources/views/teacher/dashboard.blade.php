@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.teacher')
 
 @section('content')
       <!-- Collapse -->
@@ -248,7 +248,7 @@
       </div>
     </div>
     <div class="container-fluid mt--7">
-      
+
       <div class="row mt-5">
         <div class="col-xl-12 mb-5 mb-xl-0">
           <div class="card shadow">
