@@ -11,10 +11,10 @@ Route::prefix('aluno')->group(function () {
         Route::get('/perfil', 'Student\StudentController@getProfile')->name('get.student.profile');
         Route::get('/duvidas', 'Student\StudentController@getQuestions')->name('get.student.questions');
 
-        Route::get('/logout', function () {
+        Route::get('/sair', function () {
             Auth::logout();
             return redirect()->route('login');
-        });
+        })->name('get.student.logout');
     });
 });
 
@@ -31,7 +31,7 @@ Route::prefix('professor')->group(function() {
         Route::get('/duvidas', 'Teacher\TeacherController@getQuestions')->name('get.teacher.questions');
         Route::get('/calendario', 'Teacher\TeacherController@getCalendar')->name('get.teacher.calendar');
 
-        Route::get('/logout', function () {
+        Route::get('/sair', function () {
             Auth::guard('teacher')->logout();
             return redirect()->route('get.teacher.login');
         })->name('get.teacher.logout');
