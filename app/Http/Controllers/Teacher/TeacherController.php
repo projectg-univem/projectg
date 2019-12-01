@@ -32,7 +32,7 @@ class TeacherController extends Controller
 
 	public function getProfile()
     {
-    	return view('teacher.profile');
+    	return view('teacher.profile', ['user' => Auth::guard('teacher')->user()]);
     }
 
     public function getQuestions()
@@ -40,18 +40,37 @@ class TeacherController extends Controller
     	return view('teacher.questions');
     }
 
-    public function getTaskModelo() 
+    public function getTaskModelo()
     {
         return view('teacher.taskModelo');
     }
 
-    public function getTaskGrupo() 
+    public function getTaskGrupo()
     {
         return view('teacher.taskGrupo');
     }
-    
+
     public function getCalendar()
     {
         return view('teacher.calendar');
+    }
+
+    protected function updateProfile(Request $request)
+    {
+        $user = Auth::guard('teacher')->user();
+
+        if (!is_null($request->email)) {
+            $user->email = $request->email;
+        }
+
+        if (!is_null($request->currentPass) && !is_null($request->newPass)) {
+            $user->password = Hash::make($request->newPass);
+        }
+
+        if ($user->save()) {
+            return back()->with('sucess');
+        }
+
+        return back()->with('error');
     }
 }

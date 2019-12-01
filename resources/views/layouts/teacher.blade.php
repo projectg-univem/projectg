@@ -102,7 +102,7 @@
     <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="col-lg-6 col-7 d-none d-md-inline-block">
+                <div class="col-lg-6 col-7 d-none d-md-inline-block pl-0">
                     <h6 class="h2 text-white d-inline-block mb-0">Dashboard</h6>
                 </div>
                 <!-- Navbar links -->
@@ -388,6 +388,7 @@
 <script src="{{ asset('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
 <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
 <script src="{{ asset('assets/js/demo.min.js') }}"></script>
+@yield('javascript')
 </body>
 
 </html>
