@@ -14,7 +14,7 @@
 			</div>
 			<div class="card-body">
 				<div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-				<canvas id="chart-sales" class="chart-canvas chartjs-render-monitor" width="457" height="350" style="display: block; width: 457px; height: 350px;"></canvas>
+				<canvas id="chart-leader" class="chart-canvas chartjs-render-monitor" width="457" height="350" style="display: block; width: 457px; height: 350px;"></canvas>
 				</div>
 			</div>
 		</div>
@@ -26,9 +26,20 @@
 			  <h5 class="h3 mb-0">Escalada pela dedicação</h5>
 			</div>
 			<div class="card-body">
-				<div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div>
-				<div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-				<canvas id="chart-sales" class="chart-canvas chartjs-render-monitor" width="457" height="350" style="display: block; width: 457px; height: 350px;"></canvas>
+				<div class="chart">
+					<div class="chartjs-size-monitor">
+						<div class="chartjs-size-monitor-expand">
+							<div class="">
+								
+							</div>
+						</div>
+						<div class="chartjs-size-monitor-shrink">
+							<div class="">
+								
+							</div>
+						</div>
+					</div>
+				<canvas id="chart-sales" class="chart-canvas" width="457" height="350" style="display: block; width: 857px; height: 750px;"></canvas>
 				</div>
 			</div>
 		</div>
@@ -42,8 +53,12 @@
 			  <h5 class="h3 mb-0">Escalada pela colaboração</h5>
 			</div>
 			<div class="card-body">
-				<div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-				<canvas id="chart-sales" class="chart-canvas chartjs-render-monitor" width="457" height="350" style="display: block; width: 457px; height: 350px;"></canvas>
+				<div class="card">
+				    <div class="card-body">
+				        <div class="chart">
+        					<canvas id="chart-orders" class="chart-canvas"></canvas>
+			        	</div>
+				    </div>
 				</div>
 			</div>
 		</div>
@@ -57,7 +72,7 @@
 			<div class="card-body">
 				<div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div>
 				<div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-				<canvas id="chart-sales-2" class="chart-canvas chartjs-render-monitor" width="457" height="350" style="display: block; width: 457px; height: 350px;"></canvas>
+				<canvas id="chart-colaboration" class="chart-canvas chartjs-render-monitor" width="457" height="350" style="display: block; width: 457px; height: 350px;"></canvas>
 				</div>
 			</div>
 		</div>
