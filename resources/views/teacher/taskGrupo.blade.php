@@ -135,7 +135,7 @@
     			</div>
       		</div>
 		</div>
-			
+
 			<div class="col-xl-8 order-xl-1">
 				<div class="card bg-secondary shadow">
 					<div class="card-header bg-white border-0">
@@ -233,7 +233,7 @@
             </div>
           </div>
 					<div class="card-body">
-						
+
 						<div class="progress-wrapper">
 						  <div class="progress-info">
 						  	<span class="badge badge-success">Success</span>

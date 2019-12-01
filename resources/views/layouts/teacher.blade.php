@@ -319,7 +319,6 @@
                             <nav aria-label="breadcrumb" class="d-inline-block">
                                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                                     @yield('breadcrumb')
-                                    @yield('breadcrumb')
                                 </ol>
                             </nav>
                         </div>
