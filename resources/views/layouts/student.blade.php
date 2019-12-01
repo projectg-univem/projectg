@@ -62,9 +62,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('get.student.calendar') }}">
+                        <a class="nav-link" href="{{ route('get.student.reports') }}">
                             <i class="ni ni-calendar-grid-58 text-red"></i>
-                            <span class="nav-link-text">Calendário</span>
+                            <span class="nav-link-text">Relatórios</span>
                         </a>
                     </li>
                 </ul>

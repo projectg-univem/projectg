@@ -49,4 +49,9 @@ class StudentController extends Controller
     {
         return view('student.calendar');
     }
+
+    public function getReports()
+    {
+        return view('student.reports');
+    }
 }
