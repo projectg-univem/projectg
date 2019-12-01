@@ -64,10 +64,17 @@
              </a>
            </li>
            <li class="nav-item d-none d-lg-block ml-lg-4">
-             <a href="https://www.creative-tim.com/product/argon-dashboard-pro" target="_blank" class="btn btn-neutral btn-icon">
+             <a href="{{ route('login') }}" class="btn btn-neutral btn-icon">
                <span class="btn-inner--icon">
                </span>
-               <span class="nav-link-inner--text">Login</span>
+               <span class="nav-link-inner--text">Acesso Aluno</span>
+             </a>
+           </li>
+           <li class="nav-item d-none d-lg-block ml-lg-4">
+             <a href="{{ route('get.teacher.login') }}" class="btn btn-neutral btn-icon">
+               <span class="btn-inner--icon">
+               </span>
+               <span class="nav-link-inner--text">Acesso Professor</span>
              </a>
            </li>
          </ul>
