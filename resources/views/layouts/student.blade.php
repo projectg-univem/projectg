@@ -8,7 +8,7 @@
     <meta name="author" content="Project G">
     <title>Project G - Hackathon Univem 2019</title>
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/img/brand/favicon.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('assets/img/icons/favicon.png') }}" type="image/png">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <!-- Icons -->
@@ -25,7 +25,7 @@
         <!-- Brand -->
         <div class="sidenav-header d-flex align-items-center">
             <a class="navbar-brand" href="../pages/dashboards/dashboard.html">
-                <img src="{{ asset('assets/img/brand/blue.png') }}" class="navbar-brand-img" alt="...">
+                <img src="{{ asset('assets/img/brand/logo.png') }}" class="navbar-brand-img" alt="...">
             </a>
             <div class="ml-auto">
                 <!-- Sidenav toggler -->
@@ -66,31 +66,7 @@
                             <i class="ni ni-calendar-grid-58 text-red"></i>
                             <span class="nav-link-text">Calendário</span>
                         </a>
-                    </li><li class="nav-item">
-                        <a class="nav-link" href="{{ route('get.student.questions') }}">
-                            <i class="ni ni-calendar-grid-58 text-pink"></i>
-                            <span class="nav-link-text">Dúvidas</span>
-                        </a>
                     </li>
-
-
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="#navbar-maps" data-toggle="collapse" role="button"--}}
-{{--                           aria-expanded="false" aria-controls="navbar-maps">--}}
-{{--                            <i class="ni ni-map-big text-primary"></i>--}}
-{{--                            <span class="nav-link-text">Maps</span>--}}
-{{--                        </a>--}}
-{{--                        <div class="collapse" id="navbar-maps">--}}
-{{--                            <ul class="nav nav-sm flex-column">--}}
-{{--                                <li class="nav-item">--}}
-{{--                                    <a href="../pages/maps/google.html" class="nav-link">Google</a>--}}
-{{--                                </li>--}}
-{{--                                <li class="nav-item">--}}
-{{--                                    <a href="../pages/maps/vector.html" class="nav-link">Vector</a>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                    </li>--}}
                 </ul>
             </div>
         </div>
@@ -126,8 +102,8 @@
                         <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
                             <!-- Dropdown header -->
                             <div class="px-3 py-3">
-                                <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong>
-                                    notifications.</h6>
+                                <h6 class="text-sm text-muted m-0">Você tem <strong class="text-primary">13</strong>
+                                    notificações.</h6>
                             </div>
                             <!-- List group -->
                             <div class="list-group list-group-flush">

@@ -40,6 +40,11 @@ class StudentController extends Controller
     	return view('student.questions');
     }
 
+    public function getTaskGrupo()
+    {
+        return view('student.taskGrupo');
+    }
+
     public function getCalendar() 
     {
         return view('student.calendar');
