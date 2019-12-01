@@ -24,7 +24,7 @@
     <div class="scrollbar-inner">
         <!-- Brand -->
         <div class="sidenav-header d-flex align-items-center">
-            <a class="navbar-brand" href="../pages/dashboards/dashboard.html">
+            <a class="navbar-brand" href="{{ route('get.teacher.dashboard') }}">
                 <img src="{{ asset('assets/img/brand/blue.png') }}" class="navbar-brand-img" alt="...">
             </a>
             <div class="ml-auto">
@@ -66,49 +66,27 @@
                             <i class="ni ni-calendar-grid-58 text-red"></i>
                             <span class="nav-link-text">Calendário</span>
                         </a>
-                    </li><li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.teacher.questions') }}">
                             <i class="ni ni-calendar-grid-58 text-pink"></i>
                             <span class="nav-link-text">Dúvidas</span>
                         </a>
                     </li>
-
-
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="#navbar-maps" data-toggle="collapse" role="button"--}}
-{{--                           aria-expanded="false" aria-controls="navbar-maps">--}}
-{{--                            <i class="ni ni-map-big text-primary"></i>--}}
-{{--                            <span class="nav-link-text">Maps</span>--}}
-{{--                        </a>--}}
-{{--                        <div class="collapse" id="navbar-maps">--}}
-{{--                            <ul class="nav nav-sm flex-column">--}}
-{{--                                <li class="nav-item">--}}
-{{--                                    <a href="../pages/maps/google.html" class="nav-link">Google</a>--}}
-{{--                                </li>--}}
-{{--                                <li class="nav-item">--}}
-{{--                                    <a href="../pages/maps/vector.html" class="nav-link">Vector</a>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                    </li>--}}
                 </ul>
             </div>
         </div>
     </div>
 </nav>
-<!-- Main content -->
 <div class="main-content" id="panel">
-    <!-- Topnav -->
     <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="col-lg-6 col-7 d-none d-md-inline-block pl-0">
-                    <h6 class="h2 text-white d-inline-block mb-0">Dashboard</h6>
+                    <h6 class="h2 text-white d-inline-block mb-0">@yield('pageTitle')</h6>
                 </div>
-                <!-- Navbar links -->
                 <ul class="navbar-nav align-items-center ml-md-auto">
                     <li class="nav-item d-xl-none">
-                        <!-- Sidenav toggler -->
                         <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin"
                              data-target="#sidenav-main">
                             <div class="sidenav-toggler-inner">
@@ -135,7 +113,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-auto">
                                             <!-- Avatar -->
-                                            <img alt="Image placeholder" src="../assets/img/theme/team-1.jpg"
+                                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-1.jpg') }}"
                                                  class="avatar rounded-circle">
                                         </div>
                                         <div class="col ml--2">
@@ -175,7 +153,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-auto">
                                             <!-- Avatar -->
-                                            <img alt="Image placeholder" src="../assets/img/theme/team-3.jpg"
+                                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3.jpg') }}"
                                                  class="avatar rounded-circle">
                                         </div>
                                         <div class="col ml--2">
@@ -215,7 +193,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-auto">
                                             <!-- Avatar -->
-                                            <img alt="Image placeholder" src="../assets/img/theme/team-5.jpg"
+                                            <img alt="Image placeholder" src=".{{ asset('assets/img/theme/team-5.jpg') }}"
                                                  class="avatar rounded-circle">
                                         </div>
                                         <div class="col ml--2">
@@ -316,8 +294,6 @@
             </div>
         </div>
     </nav>
-    <!-- Header -->
-    <!-- Header -->
     @if (Request::route()->getName() === 'get.teacher.profile')
         <div class="header pb-6 d-flex align-items-center"
              style="min-height: 500px; background-image: url({{ asset('assets/img/theme/profile-cover.jpg') }}); background-size: cover; background-position: center top;">
@@ -342,8 +318,7 @@
                         <div class="col-lg-6 col-7">
                             <nav aria-label="breadcrumb" class="d-inline-block">
                                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                    <li class="breadcrumb-item"><a href="#">Painel do Professor</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                    @yield('breadcrumb')
                                 </ol>
                             </nav>
                         </div>
@@ -353,7 +328,6 @@
             </div>
         </div>
     @endif
-    <!-- Page content -->
     @if('get.teacher.dashboard' === Request::route()->getName())
         <div class="container-fluid mt--6">
     @else
@@ -362,7 +336,6 @@
         <div class="row">
             @yield('content')
         </div>
-        <!-- Footer -->
         <footer class="footer pt-0">
             <div class="row align-items-center justify-content-lg-between">
                 <div class="col-lg-6">
