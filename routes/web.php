@@ -17,7 +17,7 @@ Route::prefix('aluno')->group(function () {
 
         Route::get('/sair', function () {
             Auth::logout();
-            return redirect()->route('login');
+            return redirect()->route('home');
         })->name('get.student.logout');
     });
 });
@@ -41,7 +41,7 @@ Route::prefix('professor')->group(function() {
 
         Route::get('/sair', function () {
             Auth::guard('teacher')->logout();
-            return redirect()->route('get.teacher.login');
+            return redirect()->route('home');
         })->name('get.teacher.logout');
     });
 });

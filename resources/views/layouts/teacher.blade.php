@@ -45,7 +45,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.teacher.dashboard') }}">
-                            <i class="ni ni-chart-pie-35 text-primary"></i>
+                            <i class="ni ni-spaceship text-primary"></i>
                             <span class="nav-link-text">Início</span>
                         </a>
                     </li>
@@ -57,19 +57,19 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.teacher.tasks') }}">
-                            <i class="ni ni-calendar-grid-58 text-orange"></i>
+                            <i class="ni ni-ruler-pencil text-orange"></i>
                             <span class="nav-link-text">Trabalhos</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('get.teacher.calendar') }}">
-                            <i class="ni ni-calendar-grid-58 text-red"></i>
-                            <span class="nav-link-text">Calendário</span>
-                        </a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link" href="{{ route('get.teacher.calendar') }}">--}}
+{{--                            <i class="ni ni-calendar-grid-58 text-red"></i>--}}
+{{--                            <span class="nav-link-text">Calendário</span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.teacher.questions') }}">
-                            <i class="ni ni-calendar-grid-58 text-pink"></i>
+                            <i class="ni ni-bulb-61 text-red"></i>
                             <span class="nav-link-text">Dúvidas</span>
                         </a>
                     </li>
@@ -318,6 +318,7 @@
                         <div class="col-lg-6 col-7">
                             <nav aria-label="breadcrumb" class="d-inline-block">
                                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                                    @yield('breadcrumb')
                                     @yield('breadcrumb')
                                 </ol>
                             </nav>

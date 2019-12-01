@@ -1,6 +1,6 @@
 @extends('layouts.teacher')
 
-@section('pageTitle', 'Tarefas')
+@section('pageTitle', 'Trabalhos')
 
 @section('breadcrumb')
     <li class="breadcrumb-item"><a href="#">Painel do Professor</a></li>
