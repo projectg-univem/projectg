@@ -25,6 +25,8 @@ Route::prefix('professor')->group(function() {
     Route::middleware('auth:teacher')->group(function () {
         Route::get('/', 'Teacher\TeacherController@getDashboard')->name('get.teacher.dashboard');
         Route::get('/tarefas', 'Teacher\TeacherController@getTasks')->name('get.teacher.tasks');
+        Route::get('/tarefas/modelo', 'Teacher\TeacherController@getTaskModelo')->name('get.teacher.getTaskModelo');
+        Route::get('/tarefas/modelo/grupo', 'Teacher\TeacherController@getTaskGrupo')->name('get.teacher.getTaskGrupo');
         Route::get('/perfil', 'Teacher\TeacherController@getProfile')->name('get.teacher.profile');
         Route::get('/duvidas', 'Teacher\TeacherController@getQuestions')->name('get.teacher.questions');
 
