@@ -330,25 +330,47 @@
     </nav>
     <!-- Header -->
     <!-- Header -->
-    <div class="header bg-primary pb-6">
-        <div class="container-fluid">
-            <div class="header-body">
-                <div class="row align-items-center py-4">
-                    <div class="col-lg-6 col-7">
-                        <nav aria-label="breadcrumb" class="d-inline-block">
-                            <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                <li class="breadcrumb-item"><a href="#">Painel do Professor</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                            </ol>
-                        </nav>
+    @if (Request::route()->getName() === 'get.teacher.profile')
+        <div class="header pb-6 d-flex align-items-center"
+             style="min-height: 500px; background-image: url({{ asset('assets/img/theme/profile-cover.jpg') }}); background-size: cover; background-position: center top;">
+            <!-- Mask -->
+            <span class="mask bg-gradient-default opacity-8"></span>
+            <!-- Header container -->
+            <div class="container-fluid d-flex align-items-center">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10">
+                        <h1 class="display-2 text-white">Olá {{ Auth::guard('teacher')->user()->name }}</h1>
+                        <p class="text-white mt-0 mb-5">Este é o seu perfil! Aqui você pode alterar sua senha ou seu email para receber notificações.</p>
+                        <button id="openPerfil" class="btn btn-neutral ">Editar Perfil</button>
                     </div>
-
                 </div>
             </div>
         </div>
-    </div>
+    @else
+        <div class="header bg-primary pb-6">
+            <div class="container-fluid">
+                <div class="header-body">
+                    <div class="row align-items-center py-4">
+                        <div class="col-lg-6 col-7">
+                            <nav aria-label="breadcrumb" class="d-inline-block">
+                                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                                    <li class="breadcrumb-item"><a href="#">Painel do Professor</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
     <!-- Page content -->
-    <div class="container-fluid mt--6">
+    @if('get.teacher.dashboard' === Request::route()->getName())
+        <div class="container-fluid mt--6">
+    @else
+        <div class="container-fluid mt--7">
+    @endif
         <div class="row">
             @yield('content')
         </div>

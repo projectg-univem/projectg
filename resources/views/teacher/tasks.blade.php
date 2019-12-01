@@ -1,7 +1,6 @@
 @extends('layouts.teacher')
 
 @section('content')
-
     <div class="col-xl-12 mb-5 mt-5 mb-xl-0">
         <div class="card shadow">
             <div class="card-header border-0">
@@ -14,7 +13,7 @@
                     </div>
                 </div>
             </div>
- 			<div class="table-responsive">
+            <div class="table-responsive">
                 <!-- Projects table -->
                 <table class="table align-items-center table-flush">
                     <thead class="thead-light">
@@ -93,4 +92,5 @@
                 </table>
             </div>
         </div>
+    </div>
 @endsection
