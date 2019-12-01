@@ -5,12 +5,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('aluno')->group(function () {
-    Route::middleware('auth')->group(function () {
+    Route::middleware('auth:student')->group(function () {
         Route::get('/', 'Student\StudentController@getDashboard')->name('get.student.dashboard');
         Route::get('/tarefas', 'Student\StudentController@getTasks')->name('get.student.tasks');
         Route::get('/perfil', 'Student\StudentController@getProfile')->name('get.student.profile');
         Route::get('/duvidas', 'Student\StudentController@getQuestions')->name('get.student.questions');
-        
+
         Route::get('/logout', function () {
             Auth::logout();
             return redirect()->route('login');
@@ -29,7 +29,7 @@ Route::prefix('professor')->group(function() {
         Route::get('/tarefas/modelo/grupo', 'Teacher\TeacherController@getTaskGrupo')->name('get.teacher.getTaskGrupo');
         Route::get('/perfil', 'Teacher\TeacherController@getProfile')->name('get.teacher.profile');
         Route::get('/duvidas', 'Teacher\TeacherController@getQuestions')->name('get.teacher.questions');
-
+        Route::get('/calendario', 'Teacher\TeacherController@getCalendar')->name('get.teacher.calendar');
 
         Route::get('/logout', function () {
             Auth::guard('teacher')->logout();
