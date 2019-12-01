@@ -299,7 +299,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-header noti-title">
-                                <h6 class="text-overflow m-0">Bem vindo(a), Professor(a)!</h6>
+                                <h6 class="text-overflow m-0">Bem vindo(a), Aluno(a)!</h6>
                             </div>
                             <a href="{{ route('get.student.profile') }}" class="dropdown-item">
                                 <i class="ni ni-single-02"></i>
@@ -342,7 +342,7 @@
                         <div class="col-lg-6 col-7">
                             <nav aria-label="breadcrumb" class="d-inline-block">
                                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                    <li class="breadcrumb-item"><a href="#">Painel do Professor</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Painel do Aluno</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                                 </ol>
                             </nav>
