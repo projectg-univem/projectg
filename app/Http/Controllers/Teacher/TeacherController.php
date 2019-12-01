@@ -68,9 +68,9 @@ class TeacherController extends Controller
         }
 
         if ($user->save()) {
-            return back()->with('sucess');
+            return redirect()->route('get.teacher.profile')->with('status', ['success', 'Sucesso', 'Seus dados foram atualizados.']);
         }
 
-        return back()->with('error');
+        return redirect()->route('get.teacher.profile')->with('status', ['danger', 'Erro', 'Não foi possível atualizar seus dados. Tente novamente']);
     }
 }

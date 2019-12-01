@@ -1,5 +1,7 @@
 @extends('layouts.teacher')
 
+@section('pageTitle', 'Meu Perfil')
+
 @section('content')
     <div class="col-xl-10 order-xl-1">
         <div class="card bg-secondary shadow">

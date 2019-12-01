@@ -21,12 +21,11 @@
                 <input class="form-control" name="password" placeholder="Senha" type="password">
             </div>
         </div>
-        <div class="custom-control custom-control-alternative custom-checkbox">
-            <input class="custom-control-input" id="customCheckLogin" type="checkbox">
-            <label class="custom-control-label" for="customCheckLogin">
-                <span class="text-muted">Lembrar-me</span>
-            </label>
-        </div>
+
+        @if ($errors->any())
+            <div class="font-italic text-danger"><small><span class="font-weight-700">Erro! </span> Dados de acesso inválidos.</small></div>
+        @endif
+
         <div class="text-center">
             <button type="submit" class="btn btn-primary my-4">Entrar</button>
         </div>

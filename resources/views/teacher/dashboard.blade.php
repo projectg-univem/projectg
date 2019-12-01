@@ -1,5 +1,12 @@
 @extends('layouts.teacher')
 
+@section('pageTitle', 'Dashboard')
+
+@section('breadcrumb')
+    <li class="breadcrumb-item"><a href="#">Painel do Professor</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+@endsection
+
 @section('content')
     <div class="col-xl-3 col-lg-6">
         <div class="card card-stats mb-4 mb-xl-0">
@@ -102,77 +109,26 @@
                 <!-- Projects table -->
                 <table class="table align-items-center table-flush">
                     <thead class="thead-light">
-                    <tr>
-                        <th scope="col">Trabalho</th>
-                        <th scope="col">Nº Grupos</th>
-                        <th scope="col">Qtde de Alunos Grupo</th>
-                        <th scope="col">Turma</th>
-                        <th scope="col">Status</th>
-                    </tr>
+                        <tr>
+                            <th scope="col">Trabalho</th>
+                            <th scope="col">Nº Grupos</th>
+                            <th scope="col">Qtde de Alunos Grupo</th>
+                            <th scope="col">Turma</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">Árvore B*</th>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>BCC 6 S/A</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            /argon/index.html
-                        </th>
-                        <td>
-                            3,985
-                        </td>
-                        <td>
-                            319
-                        </td>
-                        <td>
-                            <i class="fas fa-arrow-down text-warning mr-3"></i> 46,53%
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            /argon/charts.html
-                        </th>
-                        <td>
-                            3,513
-                        </td>
-                        <td>
-                            294
-                        </td>
-                        <td>
-                            <i class="fas fa-arrow-down text-warning mr-3"></i> 36,49%
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            /argon/tables.html
-                        </th>
-                        <td>
-                            2,050
-                        </td>
-                        <td>
-                            147
-                        </td>
-                        <td>
-                            <i class="fas fa-arrow-up text-success mr-3"></i> 50,87%
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            /argon/profile.html
-                        </th>
-                        <td>
-                            1,795
-                        </td>
-                        <td>
-                            190
-                        </td>
-                        <td>
-                            <i class="fas fa-arrow-down text-danger mr-3"></i> 46,53%
-                        </td>
-                    </tr>
+                        <tr>
+                            <th scope="row">Árvore B*</th>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>BCC 6 S/A</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Estrutura de Dados</th>
+                            <td>3</td>
+                            <td>8</td>
+                            <td>BSI 2 S/A</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
