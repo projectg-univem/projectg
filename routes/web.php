@@ -10,6 +10,7 @@ Route::prefix('aluno')->group(function () {
         Route::get('/tarefas', 'Student\StudentController@getTasks')->name('get.student.tasks');
         Route::get('/perfil', 'Student\StudentController@getProfile')->name('get.student.profile');
         Route::get('/duvidas', 'Student\StudentController@getQuestions')->name('get.student.questions');
+        Route::get('/calendario', 'Student\StudentController@getCalendar')->name('get.student.calendar');
 
         Route::get('/sair', function () {
             Auth::logout();

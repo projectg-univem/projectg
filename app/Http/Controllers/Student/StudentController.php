@@ -39,4 +39,9 @@ class StudentController extends Controller
     {
     	return view('student.questions');
     }
+
+    public function getCalendar() 
+    {
+        return view('student.calendar');
+    }
 }
