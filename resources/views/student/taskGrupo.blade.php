@@ -38,7 +38,7 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="../assets/img/theme/team-1.jpg">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
@@ -58,7 +58,7 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="../assets/img/theme/team-2.jpg">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
@@ -78,7 +78,7 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="../assets/img/theme/team-3.jpg">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
@@ -98,7 +98,7 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="../assets/img/theme/team-4.jpg">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
@@ -118,7 +118,7 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="../assets/img/theme/team-5.jpg">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
