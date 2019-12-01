@@ -2,7 +2,9 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', function () {
+	return view('index');
+})->name('home');
 
 Route::prefix('aluno')->group(function () {
     Route::middleware('auth:student')->group(function () {
