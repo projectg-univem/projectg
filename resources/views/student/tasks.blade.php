@@ -7,8 +7,14 @@
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-0">
-              <h3 class="mb-0">Trabalhos</h3>
-              <button class="btn btn-success">Adicionar Time</button>
+            	<div class="row">
+            	<div class="col-md-10">
+            	        <h3 class="mb-0">Lista de Trabalhos</h3>
+            	</div>
+            	<div class="col-md-2">
+            	        <button class="btn btn-success">Adicionar Time</button>
+            	</div>
+              </div>
             </div>
             <div class="table-responsive">
               <table class="table align-items-center table-flush">
@@ -57,7 +63,7 @@
 	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4.jpg') }}" class="rounded-circle">
 	                        </a>
 	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
-	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3.jpg') }}" class="rounded-circle">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3-800x800.jpg') }}" class="rounded-circle">
 	                        </a>
 	                      </div>
 	                    </td>
@@ -73,10 +79,10 @@
 		                 </td>
 	                    </td>
 	                	<td>
-	                		11/11/2019
+	                		01/10/2019
 	                	</td>
 	                	<td>
-	                		11/11/2019
+	                		11/10/2019
 	                	</td>
 	                    <td class="table-actions">
 		                  	<a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
@@ -88,7 +94,7 @@
 	                	</td>
                   </tr>
                   <tr>
-                  		<th scope="row"> Arvore B* </th>
+                  		<th scope="row"> Implementar Bezier </th>
 	                    <th scope="row">
 	                      <div class="media align-items-center">
 	                        <a href="#" class="avatar rounded-circle mr-3">
@@ -96,7 +102,7 @@
 	                        </a>
 	                        <div class="media-body">
 	                        	<a href="{{ route('get.student.taskGrupo') }}">
-	                          		<span class="mb-0 text-sm">Time X</span>
+	                          		<span class="mb-0 text-sm">Time Z</span>
 	                      		</a>
 	                        </div>
 	                      </div>
@@ -118,26 +124,148 @@
 	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4.jpg') }}" class="rounded-circle">
 	                        </a>
 	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
-	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3.jpg') }}" class="rounded-circle">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3-800x800.jpg') }}" class="rounded-circle">
 	                        </a>
 	                      </div>
 	                    	</td>
 	                    	<td>
 		                      <div class="d-flex align-items-center">
-		                        <span class="mr-2">72%</span>
+		                        <span class="mr-2">100%</span>
 		                        <div>
 		                          <div class="progress">
-		                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+		                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
 		                          </div>
 		                        </div>
 		                      </div>
 	                    	</td>
                     	</td>
 	                	<td>
-	                		11/11/2019
+	                		09/08/2019
 	                	</td>
 	                	<td>
-	                		11/11/2019
+	                		22/08/2019
+	                	</td>
+	                    <td class="table-actions">
+		                  	<a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+			                    <i class="fas fa-user-edit"></i>
+		                  	</a>
+		                  	<a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+			                    <i class="fas fa-trash"></i>
+		                  	</a>
+	                	</td>
+                  </tr>
+                  <tr>
+                  		<th scope="row"> Perceptron </th>
+	                    <th scope="row">
+	                      <div class="media align-items-center">
+	                        <a href="#" class="avatar rounded-circle mr-3">
+	                          <img alt="Image placeholder" src="../assets/img/theme/bootstrap.jpg">
+	                        </a>
+	                        <div class="media-body">
+	                        	<a href="{{ route('get.student.taskGrupo') }}">
+	                          		<span class="mb-0 text-sm">Time W</span>
+	                      		</a>
+	                        </div>
+	                      </div>
+	                    </th>
+	                    <td>
+	                    	<span class="badge badge-dot">
+	                       		<i class="bg-success"></i> completed
+                      		</span>                
+                    	</td>
+	                    	<td>
+	                      <div class="avatar-group">
+	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}" class="rounded-circle">
+	                        </a>
+	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-1.jpg') }}" class="rounded-circle">
+	                        </a>
+	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4.jpg') }}" class="rounded-circle">
+	                        </a>
+	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3-800x800.jpg') }}" class="rounded-circle">
+	                        </a>
+	                      </div>
+	                    	</td>
+	                    	<td>
+		                      <div class="d-flex align-items-center">
+		                        <span class="mr-2">100%</span>
+		                        <div>
+		                          <div class="progress">
+		                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+		                          </div>
+		                        </div>
+		                      </div>
+	                    	</td>
+                    	</td>
+	                	<td>
+	                		02/10/2019
+	                	</td>
+	                	<td>
+	                		02/11/2019
+	                	</td>
+	                    <td class="table-actions">
+		                  	<a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+			                    <i class="fas fa-user-edit"></i>
+		                  	</a>
+		                  	<a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+			                    <i class="fas fa-trash"></i>
+		                  	</a>
+	                	</td>
+                  </tr>
+                  <tr>
+                  		<th scope="row"> Diagramas de classe </th>
+	                    <th scope="row">
+	                      <div class="media align-items-center">
+	                        <a href="#" class="avatar rounded-circle mr-3">
+	                          <img alt="Image placeholder" src="../assets/img/theme/bootstrap.jpg">
+	                        </a>
+	                        <div class="media-body">
+	                        	<a href="{{ route('get.student.taskGrupo') }}">
+	                          		<span class="mb-0 text-sm">Time Y</span>
+	                      		</a>
+	                        </div>
+	                      </div>
+	                    </th>
+	                    <td>
+	                    	<span class="badge badge-dot">
+	                       		<i class="bg-success"></i> completed
+                      		</span>                
+                    	</td>
+	                    	<td>
+	                      <div class="avatar-group">
+	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}" class="rounded-circle">
+	                        </a>
+	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-1.jpg') }}" class="rounded-circle">
+	                        </a>
+	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4.jpg') }}" class="rounded-circle">
+	                        </a>
+	                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
+	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3-800x800.jpg') }}" class="rounded-circle">
+	                        </a>
+	                      </div>
+	                    	</td>
+	                    	<td>
+		                      <div class="d-flex align-items-center">
+		                        <span class="mr-2">100%</span>
+		                        <div>
+		                          <div class="progress">
+		                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+		                          </div>
+		                        </div>
+		                      </div>
+	                    	</td>
+                    	</td>
+	                	<td>
+	                		08/09/2019
+	                	</td>
+	                	<td>
+	                		30/09/2019
 	                	</td>
 	                    <td class="table-actions">
 		                  	<a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">

@@ -4,14 +4,14 @@
 
 <div class="container-fluid">
 	<h6 class="heading-small text-muted mb-4">Grupo Amazonia</h6>
-	<div class="container-fluid mt--7">
+	<div class="container-fluid mt-3">
 		<div class="row">
 			<div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
 				<div class="card">
             <!-- Card header -->
             <div class="card-header">
               <!-- Title -->
-              <h5 class="h3 mb-0">Team members</h5>
+              <h5 class="h3 mb-0">Membros do time</h5>
             </div>
             <!-- Card search -->
             <div class="card-header py-0">
@@ -38,7 +38,7 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/team/time_2.png') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
@@ -49,7 +49,7 @@
                       <small>Online</small>
                     </div>
                     <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Add</button>
+                      <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
                     </div>
                   </div>
                 </li>
@@ -58,7 +58,7 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/team/time_4.png') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
@@ -66,10 +66,10 @@
                         <a href="#!">Alex Smith</a>
                       </h4>
                       <span class="text-warning">●</span>
-                      <small>In a meeting</small>
+                      <small>Ocupado</small>
                     </div>
                     <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Add</button>
+                      <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
                     </div>
                   </div>
                 </li>
@@ -78,38 +78,18 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/team/time_1.png') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
                       <h4 class="mb-0">
-                        <a href="#!">Samantha Ivy</a>
-                      </h4>
-                      <span class="text-danger">●</span>
-                      <small>Offline</small>
-                    </div>
-                    <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Add</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item px-0">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-1.jpg') }}">
-                      </a>
-                    </div>
-                    <div class="col ml--2">
-                      <h4 class="mb-0">
-                        <a href="#!">John Michael</a>
+                        <a href="#!">John Ruppert</a>
                       </h4>
                       <span class="text-success">●</span>
                       <small>Online</small>
                     </div>
                     <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Add</button>
+                      <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
                     </div>
                   </div>
                 </li>
@@ -118,18 +98,18 @@
                     <div class="col-auto">
                       <!-- Avatar -->
                       <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="../assets/img/theme/team-5.jpg">
+                        <img alt="Image placeholder" src="{{ asset('assets/img/team/time_3.png') }}">
                       </a>
                     </div>
                     <div class="col ml--2">
                       <h4 class="mb-0">
-                        <a href="#!">John Snow</a>
+                        <a href="#!">Jeff Snow</a>
                       </h4>
                       <span class="text-success">●</span>
                       <small>Online</small>
                     </div>
                     <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Add</button>
+                      <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
                     </div>
                   </div>
                 </li>
@@ -142,18 +122,35 @@
 				<div class="card bg-secondary shadow">
 					<div class="card-header bg-white border-0">
 						<div class="row align-items-center">
-							Informações sobre o trabalho
+							<h3 class="h3 mb-0">Estrutura de dados > Arvore B* > <span class="text-primary">Informações sobre o trabalho</span></h3>
 						</div>
 					</div>
+          <div class="col-md-9 col-7" style="padding: 35px;">
+            <strong>Implementação da Árvore B</strong>
+            <br>
+            <br>
+                  O objetivo do trabalho é a implementação das rotinas de manipulação de uma árvore B de ordem k. O trabalho deve ter uma biblioteca e duas aplicações.
+                  Biblioteca:
+                  <br>  <br>
+                  A biblioteca do trabalho deve ter as definições de uma árvore B de ordem k (de k-1 a 2k-1 chaves - de k a 2k filhos) que armazene números inteiros (2 por registro, um como chave e o outro como campo) e as funções de busca e inserção.
+                  <br><br>
+                  A ordem da árvore (k) deve ser um parâmetro. Este parâmetro pode ter um valor máximo, entretanto, este valor máximo não pode ser inferior a 20.
+                  <br><br>
+                  A biblioteca deve tratar a árvore B em disco e usar a memória principal apenas para armazenar as "páginas" que estiverem em uso.
+                  <br><br>
+          </div>
+          <div class="col-md-3 col-7"  style="padding: 35px;">
+            <button class="btn btn-primary">Baixar documento</button>
+          </div>
 					<div class="card">
             <!-- Card header -->
             <div class="card-header">
               <!-- Title -->
               <div class="row">
-              	<div class="col-lg-6 col-7">
-              		<h5 class="h3 mb-0">To do list</h5>
+              	<div class="col-lg-10 col-7">
+              		<h5 class="h3 mb-0">Lista de afazeres</h5>
               	</div>
-              	<div class="col-lg-6 col-7">
+              	<div class="col-lg-2 col-7">
               		<button class="btn btn-primary">Adicionar</button>
               	</div>
             </div>
@@ -164,7 +161,7 @@
                 <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
                   <div class="checklist-item checklist-item-success checklist-item-checked">
                     <div class="checklist-info">
-                      <h5 class="checklist-title mb-0">Call with Dave</h5>
+                      <h5 class="checklist-title mb-0">Pesquisar assunto</h5>
                       <small>10:30 AM</small>
                     </div>
                     <div>
@@ -178,7 +175,7 @@
                 <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
                   <div class="checklist-item checklist-item-warning">
                     <div class="checklist-info">
-                      <h5 class="checklist-title mb-0">Lunch meeting</h5>
+                      <h5 class="checklist-title mb-0">Definir funções</h5>
                       <small>10:30 AM</small>
                     </div>
                     <div>
@@ -192,7 +189,7 @@
                 <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
                   <div class="checklist-item checklist-item-info">
                     <div class="checklist-info">
-                      <h5 class="checklist-title mb-0">Argon Dashboard Launch</h5>
+                      <h5 class="checklist-title mb-0">Implementar</h5>
                       <small>10:30 AM</small>
                     </div>
                     <div>
@@ -206,7 +203,7 @@
                 <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
                   <div class="checklist-item checklist-item-danger checklist-item-checked">
                     <div class="checklist-info">
-                      <h5 class="checklist-title mb-0">Winter Hackaton</h5>
+                      <h5 class="checklist-title mb-0">Unir com partes dos outros membros do grupo</h5>
                       <small>10:30 AM</small>
                     </div>
                     <div>
@@ -220,7 +217,7 @@
                 <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
                   <div class="checklist-item checklist-item-success checklist-item-checked">
                     <div class="checklist-info">
-                      <h5 class="checklist-title mb-0">Dinner with Family</h5>
+                      <h5 class="checklist-title mb-0">Testar</h5>
                       <small>10:30 AM</small>
                     </div>
                     <div>
@@ -238,9 +235,8 @@
 						
 						<div class="progress-wrapper">
 						  <div class="progress-info">
-						  	<span class="badge badge-success">Success</span>
 						    <div class="progress-label">
-						      <span>Task completed</span>
+						      <span>Meu progresso no trabalho </span>
 						    </div>
 						    <div class="progress-percentage">
 						      <span>60%</span>
@@ -254,7 +250,7 @@
 						<div class="progress-wrapper">
 						  <div class="progress-info">
 						    <div class="progress-label">
-						      <span>Task completed</span>
+						      <span>Progresso do time no trabalho</span>
 						    </div>
 						    <div class="progress-percentage">
 						      <span>60%</span>
@@ -264,8 +260,19 @@
 						    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
 						  </div>
 						</div>
+
 					</div>
+           
 				</div>
+           <div class="col-md-8 col-7"  style="padding-bottom: 20px;">
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Selecionar arquivo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+           </div>
+          <div class="col-md-4 col-7"  style="padding-bottom: 20px;">
+             <button type="button" class="btn btn-success">Finalizar</button>
+          </div>
 			</div>
 		</div>
 	</div>

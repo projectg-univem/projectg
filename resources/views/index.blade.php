@@ -88,9 +88,9 @@
            <div class="row align-items-center">
              <div class="col-lg-6">
                <div class="pr-5">
-                 <h1 class="display-2 text-white font-weight-bold mb-0">Project <font color="#ff9207">G</font></h1>
+                 <h1 class="display-1 text-white font-weight-bold mb-0"><font color="#ff9207">C</font>limber</h1>
                  <h2 class="display-4 text-white font-weight-light">Metodologia de ensino e avaliação gameficada.</h2>
-                 <p class="text-white mt-4">Aqui professores e alunos contarão com uma interação impar e inovadora, o Project G é uma plataforma preparada para a gestão de trabalhos, tarefas, desafios e atividades propostas pelos professores que poderão avaliar não somente os exercícios e andamento dos alunos, mas também as soft skills e desenvolvimento dos mesmos.</p>
+                 <p class="text-white mt-4">Aqui professores e alunos contarão com uma interação impar e inovadora, o Climber é uma plataforma preparada para a gestão de trabalhos, tarefas, desafios e atividades propostas pelos professores que poderão avaliar não somente os exercícios e andamento dos alunos, mas também as soft skills e desenvolvimento dos mesmos e até mesmo acompanhar o estado emocional.</p>
                  <div class="mt-5">
                    <a href="./pages/dashboards/dashboard.html" class="btn btn-neutral my-2">Saiba mais</a>
                    <a href="https://www.creative-tim.com/product/argon-dashboard-pro" class="btn btn-default my-2">Participar Agora</a>
@@ -215,7 +215,7 @@
            <div class="col-md-6 order-md-1">
              <div class="pr-md-5">
                <h1>Sistema de progressão</h1>
-               <p>O Project <font color="#ff9207">G</font></h1> utiliza <font color="#ff9207">Inteligência Artificial</font></h1> para criação de relatórios de evolução do aluno ao longo do curso, comparativos de desempenho e estimativas baseadas em notas anteriores.</p>
+               <p>O Climber <font color="#ff9207">G</font></h1> utiliza <font color="#ff9207">Inteligência Artificial</font></h1> para criação de relatórios de evolução do aluno ao longo do curso, comparativos de desempenho e estimativas baseadas em notas anteriores.</p>
                <ul class="list-unstyled mt-5">
                  <li class="py-2">
                    <div class="d-flex align-items-center">
@@ -338,7 +338,7 @@
        <div class="row align-items-center justify-content-xl-between">
          <div class="col-xl-6">
            <div class="copyright text-center text-xl-left text-muted">
-             &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Project G</a>
+             &copy; 2020 <a href="#" class="font-weight-bold ml-1" target="_blank">Climber</a>
            </div>
          </div>
        </div>

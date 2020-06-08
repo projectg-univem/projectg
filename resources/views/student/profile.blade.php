@@ -25,6 +25,9 @@
                   <h3>
                     Ted Mosby<span class="font-weight-light">, 21</span>
                   </h3>
+                  <h4>
+                    CASA: <span class="font-weight-light">Desbravadores</span>
+                  </h4>
                   <div>
                     <i class="ni education_hat mr-2"></i>Aluno - Ciência da Computação
                   </div>
@@ -179,7 +182,7 @@
                     </div>
                   </div>
                   <div class="media media-comment">
-                    <img alt="Image placeholder" class="avatar avatar-lg media-comment-avatar rounded-circle" src="../../assets/img/theme/team-2.jpg">
+                    <img alt="Image placeholder" class="avatar avatar-lg media-comment-avatar rounded-circle" src="../../assets/img/theme/team-2-800x800.jpg">
                     <div class="media-body">
                       <div class="media-comment-text">
                         <h6 class="h5 mt-0">Jessica Stones</h6>

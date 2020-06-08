@@ -33,6 +33,9 @@
                         </div>
                         <h4 class="mt-3 mb-1"><span class="text-info">●</span> Professor me socorre!</h4>
                         <p class="text-sm mb-0">Não achei nada sobre o assunto, posso entregar o trabalho na próxima semana?.</p>
+                        <div class="mt-3 mb-10">
+                                <button class="btn btn-primary">Abrir Mensagem</button>
+                        </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start py-4 px-4">
                         <div class="d-flex w-100 justify-content-between">
@@ -47,6 +50,9 @@
                         </div>
                         <h4 class="mt-3 mb-1"> Trabalho finalizado!</h4>
                         <p class="text-sm mb-0">A entrega é via moodle ou email?</p>
+                        <div class="mt-3 mb-10">
+                                <button class="btn btn-primary">Abrir Mensagem</button>
+                        </div>
                     </a>
                 </div>
             </div>

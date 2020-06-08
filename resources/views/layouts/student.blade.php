@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
     <meta name="author" content="Project G">
-    <title>Project G - Hackathon Univem 2019</title>
+    <title>Climber - Aluno</title>
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/img/icons/favicon.png') }}" type="image/png">
     <!-- Fonts -->
@@ -56,15 +56,27 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.student.profile') }}">
+                            <i class="ni ni-trophy text-info"></i>
+                            <span class="nav-link-text">Conquistas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.student.tasks') }}">
-                            <i class="ni ni-calendar-grid-58 text-orange"></i>
+                            <i class="ni ni-collection text-orange"></i>
                             <span class="nav-link-text">Trabalhos</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.student.reports') }}">
-                            <i class="ni ni-calendar-grid-58 text-red"></i>
-                            <span class="nav-link-text">Relatórios</span>
+                            <i class="ni ni-user-run text-red"></i>
+                            <span class="nav-link-text">Escalada</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.student.questions') }}">
+                            <i class="ni ni-bulb-61 text-red"></i>
+                            <span class="nav-link-text">Dúvidas</span>
                         </a>
                     </li>
                 </ul>
@@ -331,9 +343,9 @@
     @endif
     <!-- Page content -->
     @if('get.student.dashboard' === Request::route()->getName())
-        <div class="container-fluid mt--6">
+        <div class="container-fluid mt--5">
     @else
-        <div class="container-fluid mt--7">
+        <div class="container-fluid mt--5">
     @endif
         <div class="row">
             @yield('content')
@@ -343,7 +355,7 @@
             <div class="row align-items-center justify-content-lg-between">
                 <div class="col-lg-6">
                     <div class="copyright text-center text-lg-left text-muted">
-                        &copy; 2019 <a href="javascript:void(0)" class="font-weight-bold ml-1" target="_blank">Project G</a>
+                        &copy; 2020 <a href="javascript:void(0)" class="font-weight-bold ml-1" target="_blank">Climber</a>
                     </div>
                 </div>
                 <div class="col-lg-6">

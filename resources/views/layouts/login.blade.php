@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Project G - Painel do Professor">
-    <title>Painel do Professor</title>
+    <title>Painel do @yield('userType')</title>
     <link rel="icon" href="{{ asset('assets/img/brand/favicon.png') }}" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="stylesheet" href="{{ asset('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
@@ -45,12 +45,12 @@
             <hr class="d-lg-none"/>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item d-block ml-lg-4">
-                    <a href="https://www.creative-tim.com/product/argon-dashboard-pro" target="_blank"
+                    <a href="" target="_blank"
                        class="btn btn-neutral btn-icon">
                         <span class="btn-inner--icon">
-                            <i class="fas fa-user-circle mr-2"></i>
+                            <i class="fas fa-home mr-2"></i>
                         </span>
-                        <span class="nav-link-inner--text">Painel do X</span>
+                        <span class="nav-link-inner--text">Site</span>
                     </a>
                 </li>
             </ul>
@@ -65,7 +65,7 @@
             <div class="header-body text-center mb-7">
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-                        <h1 class="text-white">Bem Vindo a Painel do @yield('userType')</h1>
+                        <h1 class="text-white">Bem Vindo ao Painel do @yield('userType')</h1>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
         <div class="row align-items-center justify-content-xl-between">
             <div class="col-xl-6">
                 <div class="copyright text-center text-xl-left text-muted">
-                    &copy; 2019 <a href="#!" class="font-weight-bold ml-1" target="_blank">Project G</a>
+                    &copy; 2020 <a href="#!" class="font-weight-bold ml-1" target="_blank">Climber</a>
                 </div>
             </div>
             <div class="col-xl-6">
