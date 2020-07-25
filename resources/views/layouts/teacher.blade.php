@@ -68,7 +68,7 @@
 {{--                        </a>--}}
 {{--                    </li>--}}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('get.teacher.questions') }}">
+                        <a class="nav-link" href="{{ route('get.teacher.reports') }}">
                             <i class="ni ni-chart-bar-32 text-blue"></i>
                             <span class="nav-link-text">Relatórios</span>
                         </a>

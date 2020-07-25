@@ -35,6 +35,16 @@ class TeacherController extends Controller
     	return view('teacher.profile', ['user' => Auth::guard('teacher')->user()]);
     }
 
+    public function getReportsIndiv()
+    {
+        return view('teacher.reportsIndiv');
+    }
+
+    public function getReportsGrupo()
+    {
+        return view('teacher.reportsGrupo');
+    }
+
     public function getQuestions()
     {
     	return view('teacher.questions');
@@ -43,6 +53,11 @@ class TeacherController extends Controller
     public function getTaskModelo()
     {
         return view('teacher.taskModelo');
+    }
+
+    public function getReports()
+    {
+        return view('teacher.reports');
     }
 
     public function getTaskGrupo()

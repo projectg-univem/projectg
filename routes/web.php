@@ -28,6 +28,9 @@ Route::prefix('professor')->group(function() {
     Route::post('/login', 'Auth\TeacherLoginController@login')->name('post.teacher.login');
 
     Route::middleware('auth:teacher')->group(function () {
+        Route::get('/relatorios/grupo', 'Teacher\TeacherController@getReportsGrupo')->name('get.teacher.reportsGrupo');
+        Route::get('/relatorios/individual', 'Teacher\TeacherController@getReportsIndiv')->name('get.teacher.reportsIndiv');
+        Route::get('/relatorios', 'Teacher\TeacherController@getReports')->name('get.teacher.reports');
         Route::get('/', 'Teacher\TeacherController@getDashboard')->name('get.teacher.dashboard');
         Route::get('/tarefas', 'Teacher\TeacherController@getTasks')->name('get.teacher.tasks');
         Route::get('/tarefas/modelo', 'Teacher\TeacherController@getTaskModelo')->name('get.teacher.getTaskModelo');
@@ -36,7 +39,6 @@ Route::prefix('professor')->group(function() {
         // Profile
         Route::get('/perfil', 'Teacher\TeacherController@getProfile')->name('get.teacher.profile');
         Route::put('/perfil', 'Teacher\TeacherController@updateProfile')->name('put.teacher.profile');
-
         Route::get('/duvidas', 'Teacher\TeacherController@getQuestions')->name('get.teacher.questions');
         Route::get('/calendario', 'Teacher\TeacherController@getCalendar')->name('get.teacher.calendar');
 
