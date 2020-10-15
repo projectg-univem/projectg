@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" type="text/css">
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/argon.css?v=1.1.0') }}" type="text/css">
+
+    <link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.css') }}">
+
 </head>
 
 <body>
@@ -45,7 +49,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.student.dashboard') }}">
-                            <i class="ni ni-chart-pie-35 text-primary"></i>
+                            <i class="ni ni-shop text-primary"></i>
                             <span class="nav-link-text">Início</span>
                         </a>
                     </li>
@@ -56,7 +60,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('get.student.profile') }}">
+                        <a class="nav-link" href="{{ route('get.student.conquest') }}">
                             <i class="ni ni-trophy text-info"></i>
                             <span class="nav-link-text">Conquistas</span>
                         </a>
@@ -77,6 +81,12 @@
                         <a class="nav-link" href="{{ route('get.student.questions') }}">
                             <i class="ni ni-bulb-61 text-red"></i>
                             <span class="nav-link-text">Dúvidas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.student.calendar') }}">
+                            <i class="ni ni-calendar-grid-58 text-red"></i>
+                            <span class="nav-link-text">Calendário</span>
                         </a>
                     </li>
                 </ul>
@@ -236,7 +246,7 @@
                                     <span class="shortcut-media avatar rounded-circle bg-gradient-red">
                                         <i class="ni ni-calendar-grid-58"></i>
                                     </span>
-                                    <small>Calendar</small>
+                                    <small>Calendário</small>
                                 </a>
                                 <a href="#!" class="col-4 shortcut-item">
                                     <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
@@ -347,9 +357,11 @@
     @else
         <div class="container-fluid mt--5">
     @endif
+     
         <div class="row">
             @yield('content')
         </div>
+
         <!-- Footer -->
         <footer class="footer pt-0">
             <div class="row align-items-center justify-content-lg-between">
@@ -376,6 +388,17 @@
 <script src="{{ asset('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
 <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
 <script src="{{ asset('assets/js/demo.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/chart.js/dist/Chart.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>
+<!-- Optional JS -->
+<script src="{{ asset('assets/vendor/moment/min/moment.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.js') }}"></script>
+<!-- Argon JS -->
+<script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
+<!-- Demo JS - remove this in your project -->
+<script src="{{ asset('assets/js/demo.min.js') }}"></script>
+
 </body>
 
 </html>

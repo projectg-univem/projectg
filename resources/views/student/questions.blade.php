@@ -1,4 +1,6 @@
-@extends('layouts.teacher')
+@extends('layouts.student')
+
+@section('pageTitle', 'Dúvidas')
 
 @section('content')
 	<div class="container-fluid">

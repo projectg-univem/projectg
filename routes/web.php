@@ -15,6 +15,7 @@ Route::prefix('aluno')->group(function () {
         Route::get('/tarefas/grupo', 'Student\StudentController@getTaskGrupo')->name('get.student.taskGrupo');
         Route::get('/relatorios', 'Student\StudentController@getReports')->name('get.student.reports');
         Route::get('/duvidas', 'Student\StudentController@getQuestions')->name('get.student.questions');
+        Route::get('/conquest', 'Student\StudentController@getConquest')->name('get.student.conquest');
 
         Route::get('/sair', function () {
             Auth::logout();

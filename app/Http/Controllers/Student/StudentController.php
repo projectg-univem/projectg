@@ -54,4 +54,9 @@ class StudentController extends Controller
     {
         return view('student.reports');
     }
+
+    public function getConquest()
+    {
+        return view('student.conquest');
+    }
 }

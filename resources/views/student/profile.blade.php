@@ -1,5 +1,7 @@
 @extends('layouts.student')
 
+@section('pageTitle', 'Perfil')
+
 @section('content')
 
         <div class="row">
@@ -88,7 +90,7 @@
                       <a href="#" class="btn-icon">
                         <span class=""><img class="w-75" src="../assets/img/icones/png/001-action.png"></span>
                       </a>
-                      <span class="description">Amigável</span>
+                      <span class="description">Colaboração</span>
                       <span class="heading">Lv. 15</span>
                     </div>
                     <div>
