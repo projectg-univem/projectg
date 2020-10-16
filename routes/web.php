@@ -54,3 +54,19 @@ Route::prefix('professor')->group(function() {
         })->name('get.teacher.logout');
     });
 });
+
+Route::prefix('administrador')->group(function () {
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('get.admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('post.admin.login');
+
+    Route::middleware('auth:admin')->group(function () {
+        Route::get('/', 'Admin\AdminController@getDashboard')->name('get.admin.dashboard');
+
+        Route::get('/sair', function () {
+            Auth::guard('admin')->logout();
+            return redirect()->route('home');
+        })->name('get.admin.logout');
+    });
+
+
+});
