@@ -6,6 +6,10 @@ Route::get('/', function () {
 	return view('index');
 })->name('home');
 
+Route::get('/construct', function () {
+    return view('construct');
+})->name('construct');
+
 Route::prefix('aluno')->group(function () {
     Route::middleware('auth:student')->group(function () {
         Route::get('/', 'Student\StudentController@getDashboard')->name('get.student.dashboard');

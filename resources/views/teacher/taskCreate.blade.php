@@ -39,29 +39,55 @@
                         <h4 class="mb-0 pb-2">
                           <a>Turma</a>
                         </h4>
-                        <form>
+                        <form class="pb-2">
                           <select id="turma" class="form-control pb-2" data-toggle="select">
-                            <option>Individual</option>
-                            <option>Em grupo</option>
+                            <option>BCC 6 S/A </option>
+                            <option>BSI 2 S/A</option>
                           </select>
                         </form>
+
+                        <form class="pb-2">
+                          <select id="materia" class="form-control pb-2" data-toggle="select">
+                            <option>BCC 6 S/A </option>
+                            <option>BSI 2 S/A</option>
+                          </select>
+                        </form>
+
                         <h4 class="mb-0 pb-2">
-                          <a>Tipo de divisão</a>
+                          <a>Tipo de tarefa</a>
                         </h4>
-                        <form>
+                        <form class="pb-2">
                           <select id="tipoDivisao" class="form-control pb-2" data-toggle="select">
                             <option>Individual</option>
                             <option>Em grupo</option>
                           </select>
                         </form>
-                        <form>
-                        <h4 class="mb-0 pb-2">
-                          <a>Gerar grupos aleatoriamente?</a>
-                        </h4>
-                        <label class="custom-toggle">
-                          <input type="checkbox" checked>
-                          <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
-                        </label>
+                        <form class="pb-2">
+
+                          <h4 class="mb-0 pb-2">
+                            <a>Gerar grupos aleatoriamente?</a>
+                          </h4>
+                          <label class="custom-toggle">
+                            <input type="checkbox" checked>
+                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
+                          </label>
+
+                          <h4 class="mb-0 pb-2">
+                            <a>Alunos definem o grupo?</a>
+                          </h4>
+                          <label class="custom-toggle">
+                            <input type="checkbox" checked>
+                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
+                          </label>
+
+                          <h4 class="mb-0 pb-2">
+                            <a>Gerar grupos aleatoriamente?</a>
+                          </h4>
+                          <label class="custom-toggle">
+                            <input type="checkbox" checked>
+                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
+                          </label>
+                        </form>
                      
                       <div class="row input-daterange datepicker align-items-center">
                         <div class="col">

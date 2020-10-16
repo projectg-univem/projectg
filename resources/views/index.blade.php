@@ -92,8 +92,8 @@
                  <h2 class="display-4 text-white font-weight-light">Metodologia de ensino e avaliação gameficada.</h2>
                  <p class="text-white mt-4">Aqui professores e alunos contarão com uma interação impar e inovadora, o Climber é uma plataforma preparada para a gestão de trabalhos, tarefas, desafios e atividades propostas pelos professores que poderão avaliar não somente os exercícios e andamento dos alunos, mas também as soft skills e desenvolvimento dos mesmos e até mesmo acompanhar o estado emocional.</p>
                  <div class="mt-5">
-                   <a href="./pages/dashboards/dashboard.html" class="btn btn-neutral my-2">Saiba mais</a>
-                   <a href="https://www.creative-tim.com/product/argon-dashboard-pro" class="btn btn-default my-2">Participar Agora</a>
+                   <a href="{{ route('construct') }}" class="btn btn-neutral my-2">Saiba mais</a>
+                   <a href="{{ route('construct') }}" class="btn btn-default my-2">Participar Agora</a>
                  </div>
                </div>
              </div>
@@ -263,13 +263,13 @@
        <div class="container">
          <div class="row row-grid align-items-center">
            <div class="col-md-6">
-             <img src="./assets/img/theme/landing-2.png" class="img-fluid">
+             <img src="./assets/img/theme/landing-6.png" class="img-fluid">
            </div>
            <div class="col-md-6">
              <div class="pr-md-5">
                <h1>Kanban para controle de fluxos (metodologia ágil)</h1>
                <p>Alunos e professores podem criar cartões (post-it e outros) para acompanhar o andamento do trabalho e afazeres de cada integrante da equipe, fazer Upload de arquivos, delegar tarefas e prazos.</p>
-               <a href="./pages/examples/profile.html" class="font-weight-bold text-warning mt-5">Saber mais</a>
+               <a href="{{ route('construct') }}" class="font-weight-bold text-warning mt-5">Saber mais</a>
              </div>
            </div>
          </div>
@@ -279,13 +279,13 @@
        <div class="container">
          <div class="row row-grid align-items-center">
            <div class="col-md-6 order-md-2">
-             <img src="./assets/img/theme/landing-3.png" class="img-fluid">
+             <img src="./assets/img/theme/landing-4.png" class="img-fluid">
            </div>
            <div class="col-md-6 order-md-1">
              <div class="pr-md-5">
                <h1>Perfil</h1>
                <p>Perfil personalizado para alunos e professores, estatísticas de jogo, evolução das soft skills, edição de personagens e mais.</p>
-               <a href="./pages/widgets.html" class="font-weight-bold text-info mt-5">Saiba mais</a>
+               <a href="{{ route('construct') }}" class="font-weight-bold text-info mt-5">Saiba mais</a>
              </div>
            </div>
          </div>
