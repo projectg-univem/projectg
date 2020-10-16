@@ -46,6 +46,11 @@ return [
             'provider' => 'teachers'
         ],
 
+        'admin' => [
+            'driver'   => 'session',
+            'provider' => 'admins'
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -79,6 +84,11 @@ return [
         'teachers' => [
             'driver' => 'eloquent',
             'model'  => ProjectG\Models\Teacher::class
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model'  => ProjectG\Models\Admin::class
         ]
 
         // 'users' => [
@@ -112,6 +122,13 @@ return [
 
         'teachers' => [
             'provider' => 'teachers',
+            'table'    => 'password_resets',
+            'expire'   => 60,
+            'throttle' => 60,
+        ],
+
+        'admin' => [
+            'provider' => 'admins',
             'table'    => 'password_resets',
             'expire'   => 60,
             'throttle' => 60,
