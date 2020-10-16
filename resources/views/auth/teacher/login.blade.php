@@ -10,7 +10,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input class="form-control" name="ra" placeholder="RA" type="text">
+                <input class="form-control" name="ra" placeholder="CÓDIGO" type="text">
             </div>
         </div>
         <div class="form-group">

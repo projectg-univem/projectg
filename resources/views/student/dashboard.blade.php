@@ -54,7 +54,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col">
-                        <h5 class="card-title text-uppercase text-muted mb-0">Amigável</h5>
+                        <h5 class="card-title text-uppercase text-muted mb-0">Colaboração</h5>
                         <span class="h2 font-weight-bold mb-0">LV. 15</span>
                     </div>
                     <div class="col">
@@ -107,6 +107,7 @@
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
+                    <th scope="col">Matéria</th>
                     <th scope="col">Trabalho</th>
                     <th scope="col">Status</th>
                     <th scope="col">Time</th>
@@ -116,38 +117,42 @@
                 </thead>
                 <tbody>
               		<tr>
-	                    <th scope="row">
-	                      <div class="media align-items-center">
-	                        <a href="#" class="avatar rounded-circle mr-3">
-	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
-	                        </a>
-	                        <div class="media-body">
-	                        	<a href="{{ route('get.teacher.getTaskGrupo') }}">
-	                          		<span class="mb-0 text-sm">Trabalho x</span>
-	                      		</a>
-	                        </div>
-	                      </div>
-	                    </th>
+                    <th scope="row">
+                      <span class="badge badge-dot mr-4">
+                          Matéria x
+                      </span>
+                      <td>
+                        <div class="media align-items-center">
+                          <a href="#" class="avatar rounded-circle mr-3">
+                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
+                          </a>
+                          <div class="media-body">
+                          	<a href="{{ route('get.teacher.getTaskGrupo') }}">
+                            	<span class="mb-0 text-sm">Trabalho x</span>
+                        		</a>
+                          </div>
+                        </div>
+	                    </td>
 	                    <td>
 	                      <span class="badge badge-dot mr-4">
 	                        <i class="bg-warning"></i> Pendente
 	                      </span>
 	                    </td>
                     	<td>
-                      <div class="avatar-group">
-                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
-                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-5-800x800.jpg')}}" class="rounded-circle">
-                        </a>
-                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
-                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-2-800x800.jpg')}}" class="rounded-circle">
-                        </a>
-                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
-                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3-800x800.jpg')}}" class="rounded-circle">
-                        </a>
-                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ted Mosby">
-                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-800x800.jpg')}}" class="rounded-circle">
-                        </a>
-                      </div>
+                        <div class="avatar-group">
+                          <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-5-800x800.jpg')}}" class="rounded-circle">
+                          </a>
+                          <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-2-800x800.jpg')}}" class="rounded-circle">
+                          </a>
+                          <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-3-800x800.jpg')}}" class="rounded-circle">
+                          </a>
+                          <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ted Mosby">
+                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4-800x800.jpg')}}" class="rounded-circle">
+                          </a>
+                        </div>
 	                    </td>
 	                    <td>
 	                    	<div class="d-flex align-items-center">
@@ -168,20 +173,26 @@
 			                    <i class="fas fa-trash"></i>
 		                  	</a>
 	                	</td>
-                  </tr>
+                  </th>
+                </tr>
                   	<tr>
-	                    <th scope="row">
-	                      <div class="media align-items-center">
-	                        <a href="#" class="avatar rounded-circle mr-3">
-	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
-	                        </a>
-	                        <div class="media-body">
-	                        	<a href="{{ route('get.teacher.getTaskGrupo') }}">
-	                          		<span class="mb-0 text-sm">Trabalho x</span>
-	                      		</a>
-	                        </div>
-	                      </div>
-	                    </th>
+  	                    <th scope="row">
+                          <span class="badge badge-dot mr-4">
+                              Matéria y
+                          </span>
+                          <td>
+    	                      <div class="media align-items-center">
+    	                        <a href="#" class="avatar rounded-circle mr-3">
+    	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
+    	                        </a>
+    	                        <div class="media-body">
+    	                        	<a href="{{ route('get.teacher.getTaskGrupo') }}">
+    	                          		<span class="mb-0 text-sm">Trabalho x</span>
+    	                      		</a>
+    	                        </div>
+    	                      </div>
+                          </td>
+  	                    </th>
 	                    <td>
 	                    	<span class="badge badge-dot">
 	                       		<i class="bg-danger"></i> Atrasado
@@ -225,16 +236,21 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
-                        </a>
-                        <div class="media-body">
-                        	<a href="{{ route('get.teacher.getTaskGrupo') }}">
-                          		<span class="mb-0 text-sm">Trabalho x</span>
-                      		</a>
+                      <span class="badge badge-dot mr-4">
+                          Matéria z
+                      </span>
+                      <td>
+                        <div class="media align-items-center">
+                          <a href="#" class="avatar rounded-circle mr-3">
+                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
+                          </a>
+                          <div class="media-body">
+                          	<a href="{{ route('get.teacher.getTaskGrupo') }}">
+                            		<span class="mb-0 text-sm">Trabalho x</span>
+                        		</a>
+                          </div>
                         </div>
-                      </div>
+                      </td>
                     </th>
                     <td>
                       <span class="badge badge-dot mr-4">

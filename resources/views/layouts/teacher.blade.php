@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
     <meta name="author" content="Project G">
-    <title>Project G - Hackathon Univem 2019</title>
+    <title>Climber - Metodologia de ensino e avaliação gameficada.</title>
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/img/brand/favicon.png') }}" type="image/png">
     <!-- Fonts -->
@@ -14,6 +14,9 @@
     <!-- Icons -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" type="text/css">
+
+    <link rel="stylesheet" href="{{ asset('assets/vendor/select2/dist/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/quill/dist/quill.core.css') }}">
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/argon.css?v=1.1.0') }}" type="text/css">
 </head>
@@ -61,12 +64,18 @@
                             <span class="nav-link-text">Trabalhos</span>
                         </a>
                     </li>
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="{{ route('get.teacher.calendar') }}">--}}
-{{--                            <i class="ni ni-calendar-grid-58 text-red"></i>--}}
-{{--                            <span class="nav-link-text">Calendário</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.teacher.calendar') }}">
+                            <i class="ni ni-calendar-grid-58 text-red"></i>
+                            <span class="nav-link-text">Calendário</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.teacher.reports') }}">
+                            <i class="ni ni-chart-bar-32 text-blue"></i>
+                            <span class="nav-link-text">Relatórios</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.teacher.questions') }}">
                             <i class="ni ni-bulb-61 text-red"></i>
@@ -119,7 +128,7 @@
                                         <div class="col ml--2">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div>
-                                                    <h4 class="mb-0 text-sm">{{ Auth::guard('teacher')->user()->name }}</h4>
+                                                    <h4 class="mb-0 text-sm"></h4>
                                                 </div>
                                                 <div class="text-right text-muted">
                                                     <small>2 hrs ago</small>
@@ -271,7 +280,7 @@
                                     <img alt="Image placeholder" src="{{ asset('assets/img/theme/team-4.jpg') }}">
                                 </span>
                                 <div class="media-body ml-2 d-none d-lg-block">
-                                    <span class="mb-0 text-sm  font-weight-bold">{{ Auth::guard('teacher')->user()->name }}</span>
+                                    <span class="mb-0 text-sm  font-weight-bold"></span>
                                 </div>
                             </div>
                         </a>
@@ -303,7 +312,7 @@
             <div class="container-fluid d-flex align-items-center">
                 <div class="row">
                     <div class="col-lg-7 col-md-10">
-                        <h1 class="display-2 text-white">Olá {{ Auth::guard('teacher')->user()->name }}</h1>
+                        <h1 class="display-2 text-white">Olá </h1>
                         <p class="text-white mt-0 mb-5">Este é o seu perfil! Aqui você pode alterar sua senha ou seu email para receber notificações.</p>
                         <button id="openPerfil" class="btn btn-neutral ">Editar Perfil</button>
                     </div>
@@ -340,7 +349,7 @@
             <div class="row align-items-center justify-content-lg-between">
                 <div class="col-lg-6">
                     <div class="copyright text-center text-lg-left text-muted">
-                        &copy; 2019 <a href="javascript:void(0)" class="font-weight-bold ml-1" target="_blank">Project G</a>
+                        &copy; 2020 <a href="javascript:void(0)" class="font-weight-bold ml-1" target="_blank">Climber</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -359,8 +368,16 @@
 <script src="{{ asset('assets/vendor/js-cookie/js.cookie.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
+
+<!-- Optional JS -->
+<script src="{{ asset('assets/vendor/select2/dist/js/select2.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/nouislider/distribute/nouislider.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/quill/dist/quill.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/dropzone/dist/min/dropzone.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
+
 <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
-<script src="{{ asset('assets/js/demo.min.js') }}"></script>
 @yield('javascript')
 </body>
 

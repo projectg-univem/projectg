@@ -13,7 +13,9 @@ var SalesChart = (function() {
 	// Variables
 
 	var $chart = $('#chart-sales');
-
+	var $chart1 = $('#chart-sales1');
+	var $chart2 = $('#chart-sales2');
+	var $chart3 = $('#chart-sales3');
 
 	// Methods
 
@@ -45,6 +47,9 @@ var SalesChart = (function() {
 		// Save to jQuery object
 
 		$this.data('chart', salesChart);
+		$this.data('chart1', salesChart);
+		$this.data('chart2', salesChart);
+		$this.data('chart3', salesChart);
 
 	};
 
@@ -52,6 +57,15 @@ var SalesChart = (function() {
 	// Events
 
 	if ($chart.length) {
+		init($chart);
+	}
+		if ($chart1.length) {
+		init($chart);
+	}
+		if ($chart2.length) {
+		init($chart);
+	}
+		if ($chart3.length) {
 		init($chart);
 	}
 

@@ -4,7 +4,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-   <title> Project G - Hackathon Univem</title>
+   <title>Climber</title>
    <link rel="icon" href="{{ asset('assets/img/brand/favicon.png') }}" type="image/png">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
    <link rel="stylesheet" href="{{ asset('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
@@ -40,25 +40,25 @@
          <hr class="d-lg-none" />
          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
            <li class="nav-item">
-             <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="" data-original-title="Like us on Facebook">
+             <a class="nav-link nav-link-icon" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="Like us on Facebook">
                <i class="fab fa-facebook-square"></i>
                <span class="nav-link-inner--text d-lg-none">Facebook</span>
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Instagram">
+             <a class="nav-link nav-link-icon" href="https://www.instagram.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Instagram">
                <i class="fab fa-instagram"></i>
                <span class="nav-link-inner--text d-lg-none">Instagram</span>
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Twitter">
+             <a class="nav-link nav-link-icon" href="https://twitter.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Twitter">
                <i class="fab fa-twitter-square"></i>
                <span class="nav-link-inner--text d-lg-none">Twitter</span>
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="" data-original-title="Star us on Github">
+             <a class="nav-link nav-link-icon" href="https://github.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="Star us on Github">
                <i class="fab fa-github"></i>
                <span class="nav-link-inner--text d-lg-none">Github</span>
              </a>
@@ -88,12 +88,12 @@
            <div class="row align-items-center">
              <div class="col-lg-6">
                <div class="pr-5">
-                 <h1 class="display-2 text-white font-weight-bold mb-0">Project <font color="#ff9207">G</font></h1>
+                 <h1 class="display-1 text-white font-weight-bold mb-0"><font color="#ff9207">C</font>limber</h1>
                  <h2 class="display-4 text-white font-weight-light">Metodologia de ensino e avaliação gameficada.</h2>
-                 <p class="text-white mt-4">Aqui professores e alunos contarão com uma interação impar e inovadora, o Project G é uma plataforma preparada para a gestão de trabalhos, tarefas, desafios e atividades propostas pelos professores que poderão avaliar não somente os exercícios e andamento dos alunos, mas também as soft skills e desenvolvimento dos mesmos.</p>
+                 <p class="text-white mt-4">Aqui professores e alunos contarão com uma interação impar e inovadora, o Climber é uma plataforma preparada para a gestão de trabalhos, tarefas, desafios e atividades propostas pelos professores que poderão avaliar não somente os exercícios e andamento dos alunos, mas também as soft skills e desenvolvimento dos mesmos e até mesmo acompanhar o estado emocional.</p>
                  <div class="mt-5">
-                   <a href="./pages/dashboards/dashboard.html" class="btn btn-neutral my-2">Saiba mais</a>
-                   <a href="https://www.creative-tim.com/product/argon-dashboard-pro" class="btn btn-default my-2">Participar Agora</a>
+                   <a href="{{ route('construct') }}" class="btn btn-neutral my-2">Saiba mais</a>
+                   <a href="{{ route('construct') }}" class="btn btn-default my-2">Participar Agora</a>
                  </div>
                </div>
              </div>
@@ -186,7 +186,7 @@
                        <i class="ni ni-istanbul"></i>
                      </div>
                      <h4 class="h3 text-success text-uppercase">Trabalhos</h4>
-                     <p class="description mt-3">As delegações de trabalhos poderão ser feitas pelo professor diretamente no módulo, o memso poderá selecionar um líder ou decidir que os alunos o escolham.</p>
+                     <p class="description mt-3">As delegações de trabalhos poderão ser feitas pelo professor diretamente no módulo, o mesmo poderá selecionar um líder ou decidir que os alunos o escolham.</p>
                    </div>
                  </div>
                </div>
@@ -210,12 +210,12 @@
        <div class="container">
          <div class="row row-grid align-items-center">
            <div class="col-md-6 order-md-2">
-             <img src="./assets/img/theme/landing-1.png" class="img-fluid">
+             <img src="./assets/img/theme/landing-5.png" class="img-fluid">
            </div>
            <div class="col-md-6 order-md-1">
              <div class="pr-md-5">
                <h1>Sistema de progressão</h1>
-               <p>O Project <font color="#ff9207">G</font></h1> utiliza <font color="#ff9207">Inteligência Artificial</font></h1> para criação de relatórios de evolução do aluno ao longo do curso, comparativos de desempenho e estimativas baseadas em notas anteriores.</p>
+               <p>O Climber <font color="#ff9207"></font></h1> utiliza <font color="#ff9207">Inteligência Artificial</font></h1> para criação de relatórios de evolução do aluno ao longo do curso, comparativos de desempenho e estimativas baseadas em notas anteriores.</p>
                <ul class="list-unstyled mt-5">
                  <li class="py-2">
                    <div class="d-flex align-items-center">
@@ -263,13 +263,13 @@
        <div class="container">
          <div class="row row-grid align-items-center">
            <div class="col-md-6">
-             <img src="./assets/img/theme/landing-2.png" class="img-fluid">
+             <img src="./assets/img/theme/landing-6.png" class="img-fluid">
            </div>
            <div class="col-md-6">
              <div class="pr-md-5">
                <h1>Kanban para controle de fluxos (metodologia ágil)</h1>
                <p>Alunos e professores podem criar cartões (post-it e outros) para acompanhar o andamento do trabalho e afazeres de cada integrante da equipe, fazer Upload de arquivos, delegar tarefas e prazos.</p>
-               <a href="./pages/examples/profile.html" class="font-weight-bold text-warning mt-5">Saber mais</a>
+               <a href="{{ route('construct') }}" class="font-weight-bold text-warning mt-5">Saber mais</a>
              </div>
            </div>
          </div>
@@ -279,13 +279,13 @@
        <div class="container">
          <div class="row row-grid align-items-center">
            <div class="col-md-6 order-md-2">
-             <img src="./assets/img/theme/landing-3.png" class="img-fluid">
+             <img src="./assets/img/theme/landing-4.png" class="img-fluid">
            </div>
            <div class="col-md-6 order-md-1">
              <div class="pr-md-5">
                <h1>Perfil</h1>
                <p>Perfil personalizado para alunos e professores, estatísticas de jogo, evolução das soft skills, edição de personagens e mais.</p>
-               <a href="./pages/widgets.html" class="font-weight-bold text-info mt-5">Saiba mais</a>
+               <a href="{{ route('construct') }}" class="font-weight-bold text-info mt-5">Saiba mais</a>
              </div>
            </div>
          </div>
@@ -299,25 +299,25 @@
                <h4 class="display-4 mb-5 mt-5">Nosso Time</h4>
                <div class="row justify-content-center">
                  <div class="w-10 mx-2 mb-2">
-                   <a href=" https://www.creative-tim.com/product/argon-dashboard" target="_blank" data-toggle="tooltip" data-original-title="Bruno Costa - C.T.O">
+                   <a href="" target="_blank" data-toggle="tooltip" data-original-title="Bruno Costa - C.T.O">
                      <img src="./assets/img/team/time_1.png" class="img-fluid rounded-circle">
                      <a>Bruno Costa</a>
                    </a>
                  </div>
                  <div class="w-10 mx-2 mb-2">
-                   <a href=" https://www.creative-tim.com/product/argon-dashboard-angular" target="_blank" data-toggle="tooltip" data-original-title="Erick Costa - Dev">
+                   <a href="" target="_blank" data-toggle="tooltip" data-original-title="Erick Costa - Dev">
                      <img src="./assets/img/team/time_2.png" class="img-fluid rounded-circle">
                      <a>Erick Costa</a>
                    </a>
                  </div>
                  <div class="w-10 mx-2 mb-2">
-                   <a href=" https://www.creative-tim.com/product/argon-dashboard-react" target="_blank" data-toggle="tooltip" data-original-title="William Pires - C.I.O">
+                   <a href="" target="_blank" data-toggle="tooltip" data-original-title="William Pires - C.I.O">
                      <img src="./assets/img/team/time_3.png" class="img-fluid rounded-circle">
                      <a>William Pires</a>
                    </a>
                  </div>
                  <div class="w-10 mx-2 mb-2">
-                   <a href=" https://www.creative-tim.com/product/argon-dashboard-laravel" target="_blank" data-toggle="tooltip" data-original-title="Marcelo Santos - Dev">
+                   <a href="" target="_blank" data-toggle="tooltip" data-original-title="Marcelo Santos - Dev">
                      <img src="./assets/img/team/time_4.png" class="img-fluid rounded-circle">
                      <a>Marcelo Santos</a>
                    </a>
@@ -338,7 +338,7 @@
        <div class="row align-items-center justify-content-xl-between">
          <div class="col-xl-6">
            <div class="copyright text-center text-xl-left text-muted">
-             &copy; 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Project G</a>
+             &copy; 2020 <a href="#" class="font-weight-bold ml-1" target="_blank">Climber</a>
            </div>
          </div>
        </div>

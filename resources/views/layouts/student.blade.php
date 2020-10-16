@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
     <meta name="author" content="Project G">
-    <title>Project G - Hackathon Univem 2019</title>
+    <title>Climber - Aluno</title>
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/img/icons/favicon.png') }}" type="image/png">
     <!-- Fonts -->
@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" type="text/css">
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/argon.css?v=1.1.0') }}" type="text/css">
+
+    <link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.css') }}">
+
 </head>
 
 <body>
@@ -45,7 +49,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.student.dashboard') }}">
-                            <i class="ni ni-chart-pie-35 text-primary"></i>
+                            <i class="ni ni-shop text-primary"></i>
                             <span class="nav-link-text">Início</span>
                         </a>
                     </li>
@@ -56,15 +60,33 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.student.conquest') }}">
+                            <i class="ni ni-trophy text-info"></i>
+                            <span class="nav-link-text">Conquistas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.student.tasks') }}">
-                            <i class="ni ni-calendar-grid-58 text-orange"></i>
+                            <i class="ni ni-collection text-orange"></i>
                             <span class="nav-link-text">Trabalhos</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.student.reports') }}">
+                            <i class="ni ni-user-run text-red"></i>
+                            <span class="nav-link-text">Escalada</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.student.questions') }}">
+                            <i class="ni ni-bulb-61 text-red"></i>
+                            <span class="nav-link-text">Dúvidas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.student.calendar') }}">
                             <i class="ni ni-calendar-grid-58 text-red"></i>
-                            <span class="nav-link-text">Relatórios</span>
+                            <span class="nav-link-text">Calendário</span>
                         </a>
                     </li>
                 </ul>
@@ -224,7 +246,7 @@
                                     <span class="shortcut-media avatar rounded-circle bg-gradient-red">
                                         <i class="ni ni-calendar-grid-58"></i>
                                     </span>
-                                    <small>Calendar</small>
+                                    <small>Calendário</small>
                                 </a>
                                 <a href="#!" class="col-4 shortcut-item">
                                     <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
@@ -331,19 +353,21 @@
     @endif
     <!-- Page content -->
     @if('get.student.dashboard' === Request::route()->getName())
-        <div class="container-fluid mt--6">
+        <div class="container-fluid mt--5">
     @else
-        <div class="container-fluid mt--7">
+        <div class="container-fluid mt--5">
     @endif
+     
         <div class="row">
             @yield('content')
         </div>
+
         <!-- Footer -->
         <footer class="footer pt-0">
             <div class="row align-items-center justify-content-lg-between">
                 <div class="col-lg-6">
                     <div class="copyright text-center text-lg-left text-muted">
-                        &copy; 2019 <a href="javascript:void(0)" class="font-weight-bold ml-1" target="_blank">Project G</a>
+                        &copy; 2020 <a href="javascript:void(0)" class="font-weight-bold ml-1" target="_blank">Climber</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -357,13 +381,21 @@
         </footer>
     </div>
 </div>
+<script src="{{ asset('assets/vendor/select2/dist/js/select2.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/js-cookie/js.cookie.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/chart.js/dist/Chart.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>
+<!-- Optional JS -->
+<script src="{{ asset('assets/vendor/moment/min/moment.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.js') }}"></script>
+<!-- Argon JS -->
 <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
-<script src="{{ asset('assets/js/demo.min.js') }}"></script>
+
 </body>
 
 </html>
