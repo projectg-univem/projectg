@@ -24,7 +24,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="input-ra">RA de Acesso</label>
+                                    <label class="form-control-label" for="input-ra">Código de Acesso</label>
                                     <input type="text" id="input-ra"
                                            class="form-control form-control-alternative"
                                            placeholder="{{ $user->ra }}" disabled>

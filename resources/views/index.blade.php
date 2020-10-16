@@ -40,25 +40,25 @@
          <hr class="d-lg-none" />
          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
            <li class="nav-item">
-             <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="" data-original-title="Like us on Facebook">
+             <a class="nav-link nav-link-icon" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="Like us on Facebook">
                <i class="fab fa-facebook-square"></i>
                <span class="nav-link-inner--text d-lg-none">Facebook</span>
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Instagram">
+             <a class="nav-link nav-link-icon" href="https://www.instagram.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Instagram">
                <i class="fab fa-instagram"></i>
                <span class="nav-link-inner--text d-lg-none">Instagram</span>
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Twitter">
+             <a class="nav-link nav-link-icon" href="https://twitter.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Twitter">
                <i class="fab fa-twitter-square"></i>
                <span class="nav-link-inner--text d-lg-none">Twitter</span>
              </a>
            </li>
            <li class="nav-item">
-             <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="" data-original-title="Star us on Github">
+             <a class="nav-link nav-link-icon" href="https://github.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="Star us on Github">
                <i class="fab fa-github"></i>
                <span class="nav-link-inner--text d-lg-none">Github</span>
              </a>
@@ -186,7 +186,7 @@
                        <i class="ni ni-istanbul"></i>
                      </div>
                      <h4 class="h3 text-success text-uppercase">Trabalhos</h4>
-                     <p class="description mt-3">As delegações de trabalhos poderão ser feitas pelo professor diretamente no módulo, o memso poderá selecionar um líder ou decidir que os alunos o escolham.</p>
+                     <p class="description mt-3">As delegações de trabalhos poderão ser feitas pelo professor diretamente no módulo, o mesmo poderá selecionar um líder ou decidir que os alunos o escolham.</p>
                    </div>
                  </div>
                </div>
@@ -210,7 +210,7 @@
        <div class="container">
          <div class="row row-grid align-items-center">
            <div class="col-md-6 order-md-2">
-             <img src="./assets/img/theme/landing-1.png" class="img-fluid">
+             <img src="./assets/img/theme/landing-5.png" class="img-fluid">
            </div>
            <div class="col-md-6 order-md-1">
              <div class="pr-md-5">
@@ -299,25 +299,25 @@
                <h4 class="display-4 mb-5 mt-5">Nosso Time</h4>
                <div class="row justify-content-center">
                  <div class="w-10 mx-2 mb-2">
-                   <a href=" https://www.creative-tim.com/product/argon-dashboard" target="_blank" data-toggle="tooltip" data-original-title="Bruno Costa - C.T.O">
+                   <a href="" target="_blank" data-toggle="tooltip" data-original-title="Bruno Costa - C.T.O">
                      <img src="./assets/img/team/time_1.png" class="img-fluid rounded-circle">
                      <a>Bruno Costa</a>
                    </a>
                  </div>
                  <div class="w-10 mx-2 mb-2">
-                   <a href=" https://www.creative-tim.com/product/argon-dashboard-angular" target="_blank" data-toggle="tooltip" data-original-title="Erick Costa - Dev">
+                   <a href="" target="_blank" data-toggle="tooltip" data-original-title="Erick Costa - Dev">
                      <img src="./assets/img/team/time_2.png" class="img-fluid rounded-circle">
                      <a>Erick Costa</a>
                    </a>
                  </div>
                  <div class="w-10 mx-2 mb-2">
-                   <a href=" https://www.creative-tim.com/product/argon-dashboard-react" target="_blank" data-toggle="tooltip" data-original-title="William Pires - C.I.O">
+                   <a href="" target="_blank" data-toggle="tooltip" data-original-title="William Pires - C.I.O">
                      <img src="./assets/img/team/time_3.png" class="img-fluid rounded-circle">
                      <a>William Pires</a>
                    </a>
                  </div>
                  <div class="w-10 mx-2 mb-2">
-                   <a href=" https://www.creative-tim.com/product/argon-dashboard-laravel" target="_blank" data-toggle="tooltip" data-original-title="Marcelo Santos - Dev">
+                   <a href="" target="_blank" data-toggle="tooltip" data-original-title="Marcelo Santos - Dev">
                      <img src="./assets/img/team/time_4.png" class="img-fluid rounded-circle">
                      <a>Marcelo Santos</a>
                    </a>

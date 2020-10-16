@@ -17,8 +17,8 @@
                          <div class="col-md-10">   
                         <h3 class="mb-0">Trabalhos por turma</h3>
                         </div>
-                         <div class="col-md-2" style="padding-bottom: 14px;">
-                            <button type="button" class="btn btn-success">Criar trabalho</button>
+                         <div class="col-md-2 pb-3 text-right">
+                            <button type="button" onclick="window.location='{{ route('get.teacher.getTaskCreate') }}'" class="btn btn-success">Criar trabalho</button>
                          </div>
                     </div>
                 </div>

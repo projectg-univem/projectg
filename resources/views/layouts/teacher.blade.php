@@ -14,6 +14,9 @@
     <!-- Icons -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" type="text/css">
+
+    <link rel="stylesheet" href="{{ asset('assets/vendor/select2/dist/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/quill/dist/quill.core.css') }}">
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/argon.css?v=1.1.0') }}" type="text/css">
 </head>
@@ -61,12 +64,12 @@
                             <span class="nav-link-text">Trabalhos</span>
                         </a>
                     </li>
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="{{ route('get.teacher.calendar') }}">--}}
-{{--                            <i class="ni ni-calendar-grid-58 text-red"></i>--}}
-{{--                            <span class="nav-link-text">Calendário</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('get.teacher.calendar') }}">
+                            <i class="ni ni-calendar-grid-58 text-red"></i>
+                            <span class="nav-link-text">Calendário</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.teacher.reports') }}">
                             <i class="ni ni-chart-bar-32 text-blue"></i>
@@ -365,8 +368,16 @@
 <script src="{{ asset('assets/vendor/js-cookie/js.cookie.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
+
+<!-- Optional JS -->
+<script src="{{ asset('assets/vendor/select2/dist/js/select2.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/nouislider/distribute/nouislider.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/quill/dist/quill.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/dropzone/dist/min/dropzone.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
+
 <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
-<script src="{{ asset('assets/js/demo.min.js') }}"></script>
 @yield('javascript')
 </body>
 

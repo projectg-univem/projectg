@@ -65,6 +65,11 @@ class TeacherController extends Controller
         return view('teacher.taskGrupo');
     }
 
+    public function getTaskCreate()
+    {
+        return view('teacher.taskCreate');
+    }
+
     public function getCalendar()
     {
         return view('teacher.calendar');
