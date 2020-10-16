@@ -151,7 +151,7 @@
        </div>
      </div>
      <section class="py-6 pb-9 bg-default">
-       <div class="row justify-content-center text-center">
+       <div class="row justify-content-center no-gutters text-center">
          <div class="col-md-6">
            <h2 class="display-3 text-white">Aprendizagem baseada em projetos</h3>
              <p class="lead text-white">
