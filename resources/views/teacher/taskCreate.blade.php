@@ -11,7 +11,7 @@
             <!-- Card header -->
             <div class="card-header">
               <!-- Title -->
-              <h5 class="h3 mb-0">Parametros da Tarefa</h5>
+              <h5 class="h3 mb-0">Configurar Tarefa</h5>
             </div>
             <!-- Card search -->
             <div class="card-header py-0">
@@ -41,18 +41,19 @@
                         </h4>
                         <form class="pb-2">
                           <select id="turma" class="form-control pb-2" data-toggle="select">
-                            <option>BCC 6 S/A </option>
+                            <option>BCC 6 S/A</option>
                             <option>BSI 2 S/A</option>
                           </select>
                         </form>
-
+                        <h4 class="mb-0 pb-2">
+                          <a>Matéria</a>
+                        </h4>
                         <form class="pb-2">
                           <select id="materia" class="form-control pb-2" data-toggle="select">
-                            <option>BCC 6 S/A </option>
-                            <option>BSI 2 S/A</option>
+                            <option>Estrutura de dados</option>
+                            <option>Algoritmos</option>
                           </select>
                         </form>
-
                         <h4 class="mb-0 pb-2">
                           <a>Tipo de tarefa</a>
                         </h4>
@@ -61,55 +62,41 @@
                             <option>Individual</option>
                             <option>Em grupo</option>
                           </select>
-                        </form>
-                        <form class="pb-2">
-
-                          <h4 class="mb-0 pb-2">
-                            <a>Gerar grupos aleatoriamente?</a>
-                          </h4>
-                          <label class="custom-toggle">
-                            <input type="checkbox" checked>
-                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
-                          </label>
-
-                          <h4 class="mb-0 pb-2">
-                            <a>Alunos definem o grupo?</a>
-                          </h4>
-                          <label class="custom-toggle">
-                            <input type="checkbox" checked>
-                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
-                          </label>
-
-                          <h4 class="mb-0 pb-2">
-                            <a>Gerar grupos aleatoriamente?</a>
-                          </h4>
-                          <label class="custom-toggle">
-                            <input type="checkbox" checked>
-                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
-                          </label>
-                        </form>
-                     
-                      <div class="row input-daterange datepicker align-items-center">
-                        <div class="col">
-                          <div class="form-group">
-                            <label class="form-control-label">Data inicio</label>
-                            <input class="form-control" placeholder="Start date" type="text" value="06/18/2018">
+                        </form>                
+                        <div class="row input-daterange datepicker align-items-center">
+                          <div class="col">
+                            <div class="form-group">
+                              <label class="form-control-label">Data inicio</label>
+                              <input class="form-control" placeholder="Start date" type="text" value="06/18/2018">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                              <label class="form-control-label">Data fim</label>
+                              <input class="form-control" placeholder="End date" type="text" value="06/22/2018">
+                            </div>
                           </div>
                         </div>
-                        <div class="col">
-                          <div class="form-group">
-                            <label class="form-control-label">Data fim</label>
-                            <input class="form-control" placeholder="End date" type="text" value="06/22/2018">
+                        <h4 class="mb-0 pb-2">
+                          <a>Definição dos grupos</a>
+                        </h4>
+                        <div class="col-md-6">
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio5" type="radio">
+                            <label class="custom-control-label" for="customRadio5">Alunos defirão o grupo</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio6" checked="" type="radio">
+                            <label class="custom-control-label" for="customRadio6">Gerar grupos aleatoriamente</label>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-number-input" class="col-md-2 col-form-label form-control-label">Number</label>
+                          <div class="col-md-10">
+                            <input class="form-control" type="number" value="23" id="example-number-input">
                           </div>
                         </div>
                       </div>
-                       </div>
-<!--                       <label class="custom-toggle">
-                        <input type="checkbox">
-                        <span class="custom-toggle-slider rounded-circle"></span>
-                      </label>
-                      
-                       -->
                     </form>
                   </div>
                 </li>
@@ -133,46 +120,6 @@
                     </div> -->
                   </div>
                 </li>
-                <li class="list-group-item px-0">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('assets/img/team/time_1.png') }}">
-                      </a>
-                    </div>
-                    <div class="col ml--2">
-                      <h4 class="mb-0">
-                        <a href="#!">John Ruppert</a>
-                      </h4>
-                      <span class="text-success">●</span>
-                      <small>Online</small>
-                    </div>
-<!--                     <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
-                    </div> -->
-                  </div>
-                </li>
-                <li class="list-group-item px-0">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('assets/img/team/time_3.png') }}">
-                      </a>
-                    </div>
-                    <div class="col ml--2">
-                      <h4 class="mb-0">
-                        <a href="#!">Jeff Snow</a>
-                      </h4>
-                      <span class="text-success">●</span>
-                      <small>Online</small>
-                    </div>
-<!--                     <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
-                    </div> -->
-                  </div>
-                </li>
               </ul>
           </div>
           </div>
@@ -185,7 +132,7 @@
 
           <div class="card-header bg-white border-0">
             <div class="row align-items-center">
-              <h3 class="h3 mb-0">Estrutura de dados > Arvore B* > <span class="text-primary">Informações sobre o trabalho</span></h3>
+              <h3 class="h3 ml-3">Informações sobre a tarefa</h3>
             </div>
           </div>
 <!--           <div class="col-md-8 col-7">
