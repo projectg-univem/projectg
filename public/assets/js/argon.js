@@ -1223,7 +1223,7 @@ var PointsChart = (function() {
 // Sales chart
 //
 
-var SalesChart = (function() {
+var SalesChart1 = (function() {
 
 	// Variables
 
@@ -1233,7 +1233,7 @@ var SalesChart = (function() {
 	// Methods
 
 	function init($this) {
-		var salesChart = new Chart($this, {
+		var salesChart1 = new Chart($this, {
 			type: 'line',
 			options: {
 				scales: {
@@ -1259,7 +1259,7 @@ var SalesChart = (function() {
 
 		// Save to jQuery object
 
-		$this.data('chart', salesChart);
+		$this.data('chart', salesChart1);
 
 	};
 
@@ -1281,7 +1281,7 @@ var SalesChart = (function() {
 //
 // Sales chart
 //
-
+// ===================================================== Aluno Grafico escalada 1
 var SalesChart = (function() {
 
 	// Variables
@@ -1311,7 +1311,7 @@ var SalesChart = (function() {
 				labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 				datasets: [{
 					label: 'Performance',
-					data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+					data: [0, 20, 10, 30, 20, 30, 55, 60,100]
 				}]
 			}
 		});
@@ -1330,6 +1330,157 @@ var SalesChart = (function() {
 	}
 
 })();
+// ===================================================== Aluno Grafico escalada 2
+var SalesChart1 = (function() {
+
+	// Variables
+
+	var $chart = $('#chart-sales1');
+
+
+	// Methods
+
+	function init($this) {
+		var salesChart1 = new Chart($this, {
+			type: 'line',
+			options: {
+				scales: {
+					yAxes: [{
+						gridLines: {
+							color: Charts.colors.gray[200],
+							zeroLineColor: Charts.colors.gray[200]
+						},
+						ticks: {
+
+						}
+					}]
+				}
+			},
+			data: {
+				labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				datasets: [{
+					label: 'Performance',
+					data: [0, 20, 10, 15, 17, 20, 30, 60, 100]
+				}]
+			}
+		});
+
+		// Save to jQuery object
+
+		$this.data('chart', salesChart1);
+
+	};
+
+
+	// Events
+
+	if ($chart.length) {
+		init($chart);
+	}
+
+})();
+
+// ===================================================== Aluno Grafico escalada 3
+var SalesChar3 = (function() {
+
+	// Variables
+
+	var $chart = $('#chart-sales3');
+
+
+	// Methods
+
+	function init($this) {
+		var salesChart3 = new Chart($this, {
+			type: 'line',
+			options: {
+				scales: {
+					yAxes: [{
+						gridLines: {
+							color: Charts.colors.gray[200],
+							zeroLineColor: Charts.colors.gray[200]
+						},
+						ticks: {
+
+						}
+					}]
+				}
+			},
+			data: {
+				labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				datasets: [{
+					label: 'Performance',
+					data: [0, 20, 10, 10, 15,30, 20, 60, 100]
+				}]
+			}
+		});
+
+		// Save to jQuery object
+
+		$this.data('chart', salesChart3);
+
+	};
+
+
+	// Events
+
+	if ($chart.length) {
+		init($chart);
+	}
+
+})();
+
+// ===================================================== Aluno Grafico escalada 3
+var SalesChar3 = (function() {
+
+	// Variables
+
+	var $chart = $('#chart-sales4');
+
+
+	// Methods
+
+	function init($this) {
+		var salesChart3 = new Chart($this, {
+			type: 'line',
+			options: {
+				scales: {
+					yAxes: [{
+						gridLines: {
+							color: Charts.colors.gray[200],
+							zeroLineColor: Charts.colors.gray[200]
+						},
+						ticks: {
+
+						}
+					}]
+				}
+			},
+			data: {
+				labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				datasets: [{
+					label: 'Performance',
+					data: [0, 20, 25, 30, 32, 40, 45, 50, 100]
+				}]
+			}
+		});
+
+		// Save to jQuery object
+
+		$this.data('chart', salesChart3);
+
+	};
+
+
+	// Events
+
+	if ($chart.length) {
+		init($chart);
+	}
+
+})();
+
+
 
 //
 // Bars chart
@@ -1414,7 +1565,7 @@ var LineChart = (function() {
 				labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 				datasets: [{
 					label: 'Performance',
-					data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+					data: [0, 20, 10, 15, 15, 16, 20, 60, 100]
 				}]
 			}
 		});
@@ -2689,5 +2840,7 @@ var Tags = (function() {
 			init($(this));
 		});
 	}
+
+
 
 })();
