@@ -76,8 +76,8 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col">
-                        <h5 class="card-title text-uppercase text-muted mb-0">INDICE EMOCIONAL</h5>
-                        <span class="h2 font-weight-bold mb-0">MÉDIO</span>
+                        <h5 class="card-title text-uppercase text-muted mb-0">INDICE SENTIMENTAL</h5>
+                        <span class="h2 font-weight-bold mb-0">POSITIVO</span>
                     </div>
                     <div class="col-auto">
                         <div class="icon icon-shape bg-info text-white rounded-circle shadow">

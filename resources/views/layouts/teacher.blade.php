@@ -64,12 +64,12 @@
                             <span class="nav-link-text">Trabalhos</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                   <!--  <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.teacher.calendar') }}">
                             <i class="ni ni-calendar-grid-58 text-red"></i>
                             <span class="nav-link-text">Calendário</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.teacher.reports') }}">
                             <i class="ni ni-chart-bar-32 text-blue"></i>
@@ -305,7 +305,7 @@
     </nav>
     @if (Request::route()->getName() === 'get.teacher.profile')
         <div class="header pb-6 d-flex align-items-center"
-             style="min-height: 500px; background-image: url({{ asset('assets/img/theme/profile-cover.jpg') }}); background-size: cover; background-position: center top;">
+             style="min-height: 500px; background-image: url({{ asset('assets/img/theme/profile-teacher.jpg') }}); background-size: cover; background-position: center top;">
             <!-- Mask -->
             <span class="mask bg-gradient-default opacity-8"></span>
             <!-- Header container -->
@@ -363,6 +363,7 @@
         </footer>
     </div>
 </div>
+
 <script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/js-cookie/js.cookie.js') }}"></script>
@@ -376,8 +377,14 @@
 <script src="{{ asset('assets/vendor/quill/dist/quill.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/dropzone/dist/min/dropzone.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/chart.js/dist/Chart.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>
+<script src="{{ asset('assets/vendor/moment/min/moment.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.js') }}"></script>
 
 <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
+
 @yield('javascript')
 </body>
 

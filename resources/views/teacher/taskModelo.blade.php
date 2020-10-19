@@ -154,7 +154,7 @@
                                 </div>
                             </div>
                         </td>
-                        </td>
+                        <!-- </td>
                         <td class="table-actions">
                             <a href="#!" class="table-action" data-toggle="tooltip"
                                data-original-title="Edit product">
@@ -164,6 +164,9 @@
                                data-original-title="Delete product">
                                 <i class="fas fa-trash"></i>
                             </a>
+                        </td> -->
+                        <td>
+                          <a href="{{ route('get.teacher.getTaskEvaluate') }}" class="btn btn-sm btn-default">Avaliar</a>
                         </td>
                     </tr>
                     <tr>
@@ -210,18 +213,18 @@
                         </td>
                         <td>
                             <div class="d-flex align-items-center">
-                                <span class="mr-2">72%</span>
+                                <span class="mr-2">100%</span>
                                 <div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar"
-                                             aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"
-                                             style="width: 72%;"></div>
+                                        <div class="progress-bar bg-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 100%;"></div>
                                     </div>
                                 </div>
                             </div>
                         </td>
                         </td>
-                        <td class="table-actions">
+                        <!-- <td class="table-actions">
                             <a href="#!" class="table-action" data-toggle="tooltip"
                                data-original-title="Edit product">
                                 <i class="fas fa-user-edit"></i>
@@ -230,6 +233,9 @@
                                data-original-title="Delete product">
                                 <i class="fas fa-trash"></i>
                             </a>
+                        </td> -->
+                        <td>
+                          <a href="{{ route('get.teacher.getTaskEvaluate') }}" class="btn btn-sm btn-default">Avaliar</a>
                         </td>
                     </tr>
                     <tr>
@@ -287,7 +293,7 @@
                             </div>
                         </td>
                         </td>
-                        <td class="table-actions">
+<!--                         <td class="table-actions">
                             <a href="#!" class="table-action" data-toggle="tooltip"
                                data-original-title="Edit product">
                                 <i class="fas fa-user-edit"></i>
@@ -296,6 +302,9 @@
                                data-original-title="Delete product">
                                 <i class="fas fa-trash"></i>
                             </a>
+                        </td> -->
+                        <td>
+                          <a href="{{ route('get.teacher.getTaskEvaluate') }}" class="btn btn-sm btn-default">Avaliar</a>
                         </td>
                     </tr>
                     </tbody>

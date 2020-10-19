@@ -1,9 +1,16 @@
 @extends('layouts.teacher')
 
+@section('pageTitle', 'Trabalhos')
+
+@section('breadcrumb')
+    <li class="breadcrumb-item"><a href="#">Painel do Professor</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Criação de Trabalho</li>
+@endsection
+
 @section('content')
 
 <div class="container-fluid">
-  <h6 class="heading-small text-muted mb-4">Grupo Amazonia</h6>
+  <h6 class="heading-small text-muted mb-4"></h6>
   <div class="container-fluid mt-3">
     <div class="row">
       <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
@@ -11,12 +18,11 @@
             <!-- Card header -->
             <div class="card-header">
               <!-- Title -->
-              <h5 class="h3 mb-0">Parametros da Tarefa</h5>
+              <h5 class="h3 mb-0">Configurações do trabalho</h5>
             </div>
             <!-- Card search -->
-            <div class="card-header py-0">
-              <!-- Search form -->
-              <!-- <form>
+<!--<div class="card-header py-0">
+              <form>
                 <div class="form-group mb-0">
                   <div class="input-group input-group-lg input-group-flush">
                     <div class="input-group-prepend">
@@ -27,8 +33,8 @@
                     <input type="search" class="form-control" placeholder="Search">
                   </div>
                 </div>
-              </form> -->
-            </div>
+              </form>
+            </div> -->
             <!-- Card body -->
             <div class="card-body">
               <!-- List group -->
@@ -41,82 +47,82 @@
                         </h4>
                         <form class="pb-2">
                           <select id="turma" class="form-control pb-2" data-toggle="select">
-                            <option>BCC 6 S/A </option>
+                            <option>BCC 6 S/A</option>
                             <option>BSI 2 S/A</option>
                           </select>
                         </form>
-
+                        <h4 class="mb-0 pb-2">
+                          <a>Matéria</a>
+                        </h4>
                         <form class="pb-2">
                           <select id="materia" class="form-control pb-2" data-toggle="select">
-                            <option>BCC 6 S/A </option>
-                            <option>BSI 2 S/A</option>
+                            <option>Estrutura de dados</option>
+                            <option>Algoritmos</option>
                           </select>
                         </form>
-
                         <h4 class="mb-0 pb-2">
                           <a>Tipo de tarefa</a>
                         </h4>
                         <form class="pb-2">
                           <select id="tipoDivisao" class="form-control pb-2" data-toggle="select">
-                            <option>Individual</option>
                             <option>Em grupo</option>
+                            <option>Individual</option>
                           </select>
-                        </form>
-                        <form class="pb-2">
-
-                          <h4 class="mb-0 pb-2">
-                            <a>Gerar grupos aleatoriamente?</a>
-                          </h4>
-                          <label class="custom-toggle">
-                            <input type="checkbox" checked>
-                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
-                          </label>
-
-                          <h4 class="mb-0 pb-2">
-                            <a>Alunos definem o grupo?</a>
-                          </h4>
-                          <label class="custom-toggle">
-                            <input type="checkbox" checked>
-                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
-                          </label>
-
-                          <h4 class="mb-0 pb-2">
-                            <a>Gerar grupos aleatoriamente?</a>
-                          </h4>
-                          <label class="custom-toggle">
-                            <input type="checkbox" checked>
-                            <span class="custom-toggle-slider rounded-circle" data-label-off="Não" data-label-on="Sim"></span>
-                          </label>
-                        </form>
-                     
-                      <div class="row input-daterange datepicker align-items-center">
-                        <div class="col">
-                          <div class="form-group">
-                            <label class="form-control-label">Data inicio</label>
-                            <input class="form-control" placeholder="Start date" type="text" value="06/18/2018">
+                        </form>                
+                        <div class="row input-daterange datepicker align-items-center">
+                          <div class="col">
+                            <div class="form-group">
+                              <label class="form-control-label">Data inicio</label>
+                              <input class="form-control" placeholder="Start date" type="text" value="06/18/2018">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                              <label class="form-control-label">Data fim</label>
+                              <input class="form-control" placeholder="End date" type="text" value="06/22/2018">
+                            </div>
                           </div>
                         </div>
-                        <div class="col">
-                          <div class="form-group">
-                            <label class="form-control-label">Data fim</label>
-                            <input class="form-control" placeholder="End date" type="text" value="06/22/2018">
+                        <h4 class="mb-0 pb-2">
+                          <a>Definição dos grupos</a>
+                        </h4>
+                        <div class="col-md-12">
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio5" type="radio">
+                            <label class="custom-control-label" for="customRadio5">Alunos definirão o grupo</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio6" checked="" type="radio">
+                            <label class="custom-control-label" for="customRadio6">Gerar grupos aleatoriamente</label>
+                          </div>
+                        </div>
+                        <h4 class="mb-0 pb-2">
+                          <a>Quantidade máxima de integrantes</a>
+                        </h4>
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <input class="form-control" type="number" value="5" id="example-number-input">
+                          </div>
+                        </div>
+                        <h4 class="mb-0 pb-2">
+                          <a>Valor a considerar em % da avaliação realizada entre grupo</a>
+                        </h4>
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <input class="form-control" type="number" value="50" id="example-number-input">
                           </div>
                         </div>
                       </div>
-                       </div>
-<!--                       <label class="custom-toggle">
-                        <input type="checkbox">
-                        <span class="custom-toggle-slider rounded-circle"></span>
-                      </label>
-                      
-                       -->
                     </form>
                   </div>
                 </li>
                 <li class="list-group-item px-0">
-                  <div class="row align-items-center">
+                  <div class="col-md-12 text-center"  style="padding-bottom: 20px;">
+                     <button type="button" class="btn btn-success">Confirmar trabalho</button>
+                  </div>
+<!--<div class="row align-items-center">
                     <div class="col-auto">
-                      <!-- Avatar -->
+
                       <a href="#" class="avatar rounded-circle">
                         <img alt="Image placeholder" src="{{ asset('assets/img/team/time_4.png') }}">
                       </a>
@@ -128,50 +134,10 @@
                       <span class="text-warning">●</span>
                       <small>Ocupado</small>
                     </div>
-<!--                     <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
-                    </div> -->
-                  </div>
-                </li>
-                <li class="list-group-item px-0">
-                  <div class="row align-items-center">
                     <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('assets/img/team/time_1.png') }}">
-                      </a>
-                    </div>
-                    <div class="col ml--2">
-                      <h4 class="mb-0">
-                        <a href="#!">John Ruppert</a>
-                      </h4>
-                      <span class="text-success">●</span>
-                      <small>Online</small>
-                    </div>
-<!--                     <div class="col-auto">
                       <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
-                    </div> -->
-                  </div>
-                </li>
-                <li class="list-group-item px-0">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="#" class="avatar rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('assets/img/team/time_3.png') }}">
-                      </a>
                     </div>
-                    <div class="col ml--2">
-                      <h4 class="mb-0">
-                        <a href="#!">Jeff Snow</a>
-                      </h4>
-                      <span class="text-success">●</span>
-                      <small>Online</small>
-                    </div>
-<!--                     <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-primary">Enviar Mensagem</button>
-                    </div> -->
-                  </div>
+                  </div> -->
                 </li>
               </ul>
           </div>
@@ -185,7 +151,7 @@
 
           <div class="card-header bg-white border-0">
             <div class="row align-items-center">
-              <h3 class="h3 mb-0">Estrutura de dados > Arvore B* > <span class="text-primary">Informações sobre o trabalho</span></h3>
+              <h3 class="h3 ml-3">Informações sobre o trabalho</h3>
             </div>
           </div>
 <!--           <div class="col-md-8 col-7">
@@ -200,23 +166,57 @@
             </div>
           </div> -->
 
-          <div class="col-md-9 col-7" style="padding: 35px;">
-            <strong>Implementação da Árvore B</strong>
-            <br>
-            <br>
-                  O objetivo do trabalho é a implementação das rotinas de manipulação de uma árvore B de ordem k. O trabalho deve ter uma biblioteca e duas aplicações.
-                  Biblioteca:
-                  <br>  <br>
-                  A biblioteca do trabalho deve ter as definições de uma árvore B de ordem k (de k-1 a 2k-1 chaves - de k a 2k filhos) que armazene números inteiros (2 por registro, um como chave e o outro como campo) e as funções de busca e inserção.
-                  <br><br>
-                  A ordem da árvore (k) deve ser um parâmetro. Este parâmetro pode ter um valor máximo, entretanto, este valor máximo não pode ser inferior a 20.
-                  <br><br>
-                  A biblioteca deve tratar a árvore B em disco e usar a memória principal apenas para armazenar as "páginas" que estiverem em uso.
-                  <br><br>
+          <div class="col-md-12 col-7" style="padding: 35px;">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="col-xl-2">
+                        <h3 class="mb-0">  Título:</h3><br>
+                    </div>
+                    <div class="col-md-12">
+                          <div class="form-group">
+                            <input type="text" placeholder="Árvore B*" value="Árvore B*" class="form-control"/>
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="mb-0">  Arquivo:</h3>
+                    </div>
+                    <div class="col-md-12 pb-4 pt-4">
+                      <form>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFileLang" lang="pt">
+                          <label class="custom-file-label" for="customFileLang">Selecionar arquivo</label>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <form>
+                  <div data-toggle="quill" data-quill-placeholder="Quill WYSIWYG">Implementação da Árvore B
+
+                    O objetivo do trabalho é a implementação das rotinas de manipulação de uma árvore B de ordem k. O trabalho deve ter uma biblioteca e duas aplicações.
+                    Biblioteca:
+
+                    A biblioteca do trabalho deve ter as definições de uma árvore B de ordem k (de k-1 a 2k-1 chaves - de k a 2k filhos) que armazene números inteiros (2 por registro, um como chave e o outro como campo) e as funções de busca e inserção.
+
+                    A ordem da árvore (k) deve ser um parâmetro. Este parâmetro pode ter um valor máximo, entretanto, este valor máximo não pode ser inferior a 20.
+
+                    A biblioteca deve tratar a árvore B em disco e usar a memória principal apenas para armazenar as "páginas" que estiverem em uso.
+
+                    A biblioteca deve conter procedimentos com a seguinte interface (podendo mudar de uma linguagem para outra):
+
+                        createbtree(int k, FILE *f) --> btree* - cria uma árvore B de ordem k no arquivo f e retorna um ponteiro para a estrutura;
+
+                        insert(btree T, int key, int reg) --> int - insere um par (chave,registro) na árvore T, retornando se a operação deu certo;
+
+                        search(btree T, int key) --> int - busca pela chave key e retorna o registro encontrado ou -1 se não encontrar. 
+
+                    Aplicações:</div>
+                </form>
+
+            </div>
           </div>
-          <div class="col-md-3 col-7"  style="padding: 35px;">
-            <button class="btn btn-primary">Baixar documento</button>
-          </div>
+
           <div class="card">
             <!-- Card header -->
             <div class="card-header">
@@ -225,9 +225,7 @@
                 <div class="col-lg-10 col-7">
                   <h5 class="h3 mb-0">Lista de afazeres</h5>
                 </div>
-                <div class="col-lg-2 col-7">
                   <button class="btn btn-primary">Adicionar</button>
-                </div>
             </div>
             <!-- Card body -->
             <div class="card-body p-0">
@@ -339,7 +337,7 @@
           </div>
            
         </div>
-           <div class="col-md-8 col-7"  style="padding-bottom: 20px;">
+          <!--  <div class="col-md-8 col-7"  style="padding-bottom: 20px;">
           <div class="form-group">
             <label for="exampleFormControlFile1">Selecionar arquivo</label>
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -348,7 +346,7 @@
           <div class="col-md-4 col-7"  style="padding-bottom: 20px;">
              <button type="button" class="btn btn-success">Finalizar</button>
           </div>
-      </div>
+      </div> -->
     </div>
   </div>
 

@@ -101,18 +101,17 @@
     <div class="col-xl-9 mb-5 mt-5 mb-xl-0">
        <div class="card shadow">
             <div class="card-header border-0">
-              <h3 class="mb-0">Lista de atividades</h3>
+              <h3 class="mb-0">Lista de Missões</h3>
             </div>
             <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
                     <th scope="col">Matéria</th>
-                    <th scope="col">Trabalho</th>
+                    <th scope="col">Missão</th>
                     <th scope="col">Status</th>
                     <th scope="col">Time</th>
                     <th scope="col">Andamento</th>
-                    <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -124,7 +123,7 @@
                       <td>
                         <div class="media align-items-center">
                           <a href="#" class="avatar rounded-circle mr-3">
-                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
+                            <img alt="Image placeholder" src="{{ asset('assets/img/icones/png/030-hunting.png')}}">
                           </a>
                           <div class="media-body">
                           	<a href="{{ route('get.teacher.getTaskGrupo') }}">
@@ -165,14 +164,7 @@
 		                     </div>
 		                 </td>
 	                    </td>
-	                    <td class="table-actions">
-		                  	<a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
-			                    <i class="fas fa-user-edit"></i>
-		                  	</a>
-		                  	<a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
-			                    <i class="fas fa-trash"></i>
-		                  	</a>
-	                	</td>
+
                   </th>
                 </tr>
                   	<tr>
@@ -183,7 +175,7 @@
                           <td>
     	                      <div class="media align-items-center">
     	                        <a href="#" class="avatar rounded-circle mr-3">
-    	                          <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
+    	                          <img alt="Image placeholder" src="{{ asset('assets/img/icones/png/030-hunting.png')}}">
     	                        </a>
     	                        <div class="media-body">
     	                        	<a href="{{ route('get.teacher.getTaskGrupo') }}">
@@ -225,14 +217,7 @@
 		                      </div>
 	                    	</td>
                     	</td>
-	                    <td class="table-actions">
-		                  	<a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
-			                    <i class="fas fa-user-edit"></i>
-		                  	</a>
-		                  	<a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
-			                    <i class="fas fa-trash"></i>
-		                  	</a>
-	                	</td>
+
                   </tr>
                   <tr>
                     <th scope="row">
@@ -242,7 +227,7 @@
                       <td>
                         <div class="media align-items-center">
                           <a href="#" class="avatar rounded-circle mr-3">
-                            <img alt="Image placeholder" src="{{ asset('assets/img/theme/bootstrap.jpg')}}">
+                            <img alt="Image placeholder" src="{{ asset('assets/img/icones/png/030-hunting.png')}}">
                           </a>
                           <div class="media-body">
                           	<a href="{{ route('get.teacher.getTaskGrupo') }}">
@@ -284,14 +269,7 @@
                       </div>
                     </td>
                     </td>
-                    <td class="table-actions">
-	                  	<a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
-		                    <i class="fas fa-user-edit"></i>
-	                  	</a>
-	                  	<a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
-		                    <i class="fas fa-trash"></i>
-	                  	</a>
-                	</td>
+                    
                   </tr>
                 </tbody>
               </table>
@@ -334,13 +312,13 @@
     <div class="card-body">
       <div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
         <div class="timeline-block">
-          <span class="timeline-step badge-success">
+          <span class="timeline-step badge-info">
             <i class="ni ni-bell-55"></i>
           </span>
           <div class="timeline-content">
             <div class="d-flex justify-content-between pt-1">
               <div>
-                <span class="text-muted text-sm font-weight-bold">Nova Mensagem</span>
+                <span class="text-muted text-sm font-weight-bold">Novo comentário</span>
               </div>
               <div class="text-right">
                 <small class="text-muted"><i class="fas fa-clock mr-1"></i>2 hrs atrás</small>
@@ -350,19 +328,19 @@
           </div>
         </div>
         <div class="timeline-block">
-          <span class="timeline-step badge-danger">
-            <i class="ni ni-html5"></i>
+          <span class="timeline-step badge-success">
+            <i class="ni ni-trophy"></i>
           </span>
           <div class="timeline-content">
             <div class="d-flex justify-content-between pt-1">
               <div>
-                <span class="text-muted text-sm font-weight-bold">Alteração</span>
+                <span class="text-muted text-sm font-weight-bold">Conquista</span>
               </div>
               <div class="text-right">
                 <small class="text-muted"><i class="fas fa-clock mr-1"></i>3 hrs atrás</small>
               </div>
             </div>
-            <h6 class="text-sm mt-1 mb-0">Uma nova alteração foi realizada.</h6>
+            <h6 class="text-sm mt-1 mb-0">Uma nova conquista foi desbloqueada!</h6>
           </div>
         </div>
         <div class="timeline-block">

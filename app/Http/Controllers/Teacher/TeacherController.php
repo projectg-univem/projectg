@@ -75,6 +75,11 @@ class TeacherController extends Controller
         return view('teacher.calendar');
     }
 
+    public function getTaskEvaluate()
+    {
+        return view('teacher.taskEvaluate');
+    }
+
     protected function updateProfile(Request $request)
     {
         $user = Auth::guard('teacher')->user();
