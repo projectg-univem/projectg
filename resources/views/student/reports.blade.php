@@ -41,8 +41,13 @@
 		<div class="col-xl-6">
 			<div class="card">
 				<div class="card-header">
-				  <h6 class="surtitle">Visão geral</h6>
-				  <h5 class="h3 mb-0">Escalada pela liderança</h5>
+					<h6 class="surtitle">Visão geral</h6>
+					<h5 class="h3 mb-0">Escalada pela liderança</h5>
+	                <div class="col">
+		                    <div class="rounded-circle">
+					            <img class="w-10 mx-auto float-right" src="{{ asset('assets/img/icones/png/039-level-2.png')}}">
+		                    </div>
+	                </div>
 				</div>
 				<div class="card-body">
 					<div class="chart">
@@ -68,6 +73,11 @@
 				<div class="card-header">
 				  <h6 class="surtitle">Visão geral</h6>
 				  <h5 class="h3 mb-0">Escalada pela dedicação</h5>
+                  <div class="col">
+	                    <div class="rounded-circle">
+							<img class="w-10 mx-auto float-right" src="{{ asset('assets/img/icones/png/009-crossing-swords.png')}}">
+	                    </div>
+                  </div>
 				</div>
 				<div class="card-body">
 					<div class="chart">
@@ -94,6 +104,11 @@
 				<div class="card-header">
 				  <h6 class="surtitle">Visão geral</h6>
 				  <h5 class="h3 mb-0">Escalada pela colaboração</h5>
+                      <div class="col">
+                          <div class="rounded-circle">
+  							    <img class="w-10 mx-auto float-right" src="{{ asset('assets/img/icones/png/001-action.png')}}">
+                          </div>
+                      </div>
 				</div>
 				<div class="card-body">
 					<div class="chart">
@@ -118,6 +133,11 @@
 				<div class="card-header">
 				  <h6 class="surtitle">Visão geral</h6>
 				  <h5 class="h3 mb-0">Escalada pela habilidade</h5>
+                  <div class="col">
+                      <div class="rounded-circle">
+							<img class="w-10 mx-auto float-right" src="{{ asset('assets/img/icones/png/068-trophy.png')}}">
+                      </div>
+                  </div>
 				</div>
 				<div class="card-body">
 					<div class="chart">

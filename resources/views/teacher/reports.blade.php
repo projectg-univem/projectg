@@ -74,8 +74,8 @@
 		        <div class="card-body">
 		            <div class="row">
 		                <div class="col">
-		                    <h5 class="card-title text-uppercase text-muted mb-0">INDICE EMOCIONAL</h5>
-		                    <span class="h2 font-weight-bold mb-0">MÉDIO</span>
+		                    <h5 class="card-title text-uppercase text-muted mb-0">INDICE SENTIMENTAL</h5>
+		                    <span class="h2 font-weight-bold mb-0">POSITIVO</span>
 		                </div>
 		                <div class="col-auto">
 		                    <div class="icon icon-shape bg-info text-white rounded-circle shadow">
@@ -101,7 +101,9 @@
         	          Aqui você pode visualizar a lista de todos os grupos existentes. 
         	        </p>
         	</div>
+          <div class="col-md-2">
 
+          </div>
           </div>
         </div>
         <div class="table-responsive">
@@ -113,6 +115,7 @@
                 <th scope="col">Time</th>
                 <th scope="col">Turma</th>
                 <th scope="col">Data Criação</th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
@@ -152,6 +155,9 @@
                 	<td>
                 		01/10/2019
                 	</td>
+                  <td>
+                    <a href="{{ route('get.teacher.getTaskEvaluate') }}" class="btn btn-sm btn-default">Avaliar</a>
+                  </td>
               </tr>
               <tr>
                     <th scope="row">
@@ -186,13 +192,15 @@
                     	</td>
                     	
                 	</td>
-                	                    <td>
+                	<td>
                		BCC 7A-S - Noturno
                		</td>
                 	<td>
                 		09/08/2019
-                	</td>                	
-
+                	</td>
+                  <td>
+                    <a href="{{ route('get.teacher.getTaskEvaluate') }}" class="btn btn-sm btn-default">Avaliar</a>
+                  </td>                	
               </tr>
               <tr>
                     <th scope="row">
@@ -227,14 +235,15 @@
                     	</td>
                     	
                 	</td>
-                	                    <td>
+                	<td>
                		BCC 7A-S - Noturno
                		</td>
                 	<td>
                 		02/10/2019
                 	</td>
-
-
+                  <td>
+                    <a href="{{ route('get.teacher.getTaskEvaluate') }}" class="btn btn-sm btn-default">Avaliar</a>
+                  </td>
               </tr>
               <tr>
                     <th scope="row">
@@ -269,14 +278,15 @@
                     	</td>
                     	
                 	</td>
-                	                    <td>
+                	<td>
                		BCC 7A-S - Noturno
                		</td>
                 	<td>
                 		08/09/2019
                 	</td>
-                	
-
+                  <td>
+                    <a href="{{ route('get.teacher.getTaskEvaluate') }}" class="btn btn-sm btn-default">Avaliar</a>
+                  </td>
               </tr>
             </tbody>
           </table>
@@ -346,7 +356,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>21</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Garrett Winters</td>
@@ -354,7 +366,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>23</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Ashton Cox</td>
@@ -362,7 +376,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>19</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Cedric Kelly</td>
@@ -370,7 +386,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>22</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Airi Satou</td>
@@ -378,7 +396,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>23</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Brielle Williamson</td>
@@ -386,7 +406,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>21</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Herrod Chandler</td>
@@ -394,7 +416,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>19</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Rhona Davidson</td>
@@ -402,7 +426,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>25</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Colleen Hurst</td>
@@ -410,7 +436,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>19</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Sonya Frost</td>
@@ -418,7 +446,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>23</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Jena Gaines</td>
@@ -426,7 +456,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>20</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Quinn Flynn</td>
@@ -434,7 +466,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>22</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Charde Marshall</td>
@@ -442,7 +476,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>26</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Haley Kennedy</td>
@@ -450,7 +486,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>23</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Tatyana Fitzpatrick</td>
@@ -458,7 +496,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>19</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Michael Silva</td>
@@ -466,7 +506,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>26</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Paul Byrd</td>
@@ -474,7 +516,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>24</td>
                 <td>Bom</td>
-               <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                               <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
               <tr>
                 <td>Gloria Little</td>
@@ -482,7 +526,9 @@
                 <td>BCC 7A-S - Noturno</td>
                 <td>19</td>
                 <td>Bom</td>
-                <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                <td>
+                    <a href="{{ route('get.teacher.reportsIndiv') }}" class="btn btn-sm btn-primary">Visualizar</a>
+                </td>
               </tr>
             </tbody>
           </table>
