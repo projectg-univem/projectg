@@ -1,12 +1,12 @@
 <?php
 
-namespace ProjectG\Http\Controllers\Student;
+namespace ProjectG\Http\Controllers\Teacher;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use ProjectG\Http\Controllers\Controller;
 
-class StudentController extends Controller
+class ActivitieController extends Controller
 {
     protected $authStudent;
 

@@ -270,8 +270,8 @@
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
           </div>
            </div>
-          <div class="col-md-4 col-7"  style="padding-bottom: 20px;">
-             <button type="button" class="btn btn-success">Finalizar</button>
+          <div class="col-md-4 col-7"  style="padding-bottom: 20px;" >
+             <button type="button" onclick="window.location='{{ route('get.student.getTaskEvaluate') }}'" class="btn btn-success">Finalizar</button>
           </div>
 			</div>
 		</div>

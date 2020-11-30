@@ -15,24 +15,13 @@
 				  <h5 class="h3 mb-0">Os desafios te esperam durante essa jornada!</h5>
 				</div>
 				<div class="card-body">
-					<div class="chart">
-						<div class="chartjs-size-monitor">
-							<div class="chartjs-size-monitor-expand">
-								<div class="">
-									
-								</div>
-							</div>
-							<div class="chartjs-size-monitor-shrink">
-								<div class="">
-									
-								</div>
-							</div>
-						</div>
-					
+					<div class="">
+						<img class="w-100 mx-auto float-right" src="{{ asset('assets/img/theme/mapa.png')}}">
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
 	</div>
 <!--Fim Mapa animado -->
