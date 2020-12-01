@@ -126,7 +126,7 @@
                             <img alt="Image placeholder" src="{{ asset('assets/img/icones/png/030-hunting.png')}}">
                           </a>
                           <div class="media-body">
-                          	<a href="{{ route('get.teacher.getTaskGrupo') }}">
+                          	<a href="{{ route('get.student.taskGrupo') }}">
                             	<span class="mb-0 text-sm">Trabalho x</span>
                         		</a>
                           </div>
@@ -178,7 +178,7 @@
     	                          <img alt="Image placeholder" src="{{ asset('assets/img/icones/png/030-hunting.png')}}">
     	                        </a>
     	                        <div class="media-body">
-    	                        	<a href="{{ route('get.teacher.getTaskGrupo') }}">
+    	                        	<a href="{{ route('get.student.taskGrupo') }}">
     	                          		<span class="mb-0 text-sm">Trabalho x</span>
     	                      		</a>
     	                        </div>
@@ -230,7 +230,7 @@
                             <img alt="Image placeholder" src="{{ asset('assets/img/icones/png/030-hunting.png')}}">
                           </a>
                           <div class="media-body">
-                          	<a href="{{ route('get.teacher.getTaskGrupo') }}">
+                          	<a href="{{ route('get.student.taskGrupo') }}">
                             		<span class="mb-0 text-sm">Trabalho x</span>
                         		</a>
                           </div>

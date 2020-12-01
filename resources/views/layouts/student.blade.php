@@ -83,12 +83,12 @@
                             <span class="nav-link-text">Dúvidas</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('get.student.calendar') }}">
                             <i class="ni ni-calendar-grid-58 text-red"></i>
                             <span class="nav-link-text">Calendário</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

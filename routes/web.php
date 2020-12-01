@@ -20,6 +20,7 @@ Route::prefix('aluno')->group(function () {
         Route::get('/relatorios', 'Student\StudentController@getReports')->name('get.student.reports');
         Route::get('/duvidas', 'Student\StudentController@getQuestions')->name('get.student.questions');
         Route::get('/conquest', 'Student\StudentController@getConquest')->name('get.student.conquest');
+        Route::get('/tarefas/avaliar', 'Student\StudentController@getTaskEvaluate')->name('get.student.getTaskEvaluate');
 
         Route::get('/sair', function () {
             Auth::logout();
@@ -42,6 +43,7 @@ Route::prefix('professor')->group(function() {
         Route::get('/tarefas/modelo/grupo', 'Teacher\TeacherController@getTaskGrupo')->name('get.teacher.getTaskGrupo');
         Route::get('/tarefas/criar', 'Teacher\TeacherController@getTaskCreate')->name('get.teacher.getTaskCreate');
         Route::get('/tarefas/avaliar', 'Teacher\TeacherController@getTaskEvaluate')->name('get.teacher.getTaskEvaluate');
+        Route::post('/tarefas/criar/registra', 'Teacher\ActivitieController@registerActivitie')->name('post.teacher.registerActivitie');
 
         // Profile
         Route::get('/perfil', 'Teacher\TeacherController@getProfile')->name('get.teacher.profile');

@@ -146,7 +146,7 @@
                 <tr>
                   <td class="table-user">
                     <img src="../../assets/img/theme/team-1.jpg" class="avatar rounded-circle mr-3">
-                    <b>John Michael</b>
+                    <b>Ryan Tompson</b>
                   </td>
                   <td>
                     <span class="text-muted">4</span>
@@ -164,9 +164,9 @@
                 </tr>
                 <tr>
                   <td class="table-user">
-                    <img src="../../assets/img/theme/team-2.jpg" class="avatar rounded-circle mr-3">
-                    <b>Alex Smith</b>
-                  </td>
+                    <img src="../../assets/img/theme/img-1-1000x900.jpg" class="avatar rounded-circle mr-3">
+                    <b>Alexander Smith</b>
+                  </td> 
                   <td>
                     <span class="text-muted">4</span>
                   </td>
@@ -183,7 +183,7 @@
                 </tr>
                 <tr>
                   <td class="table-user">
-                    <img src="../../assets/img/theme/team-3.jpg" class="avatar rounded-circle mr-3">
+                    <img src="../../assets/img/theme/team-2-800x800.jpg" class="avatar rounded-circle mr-3">
                     <b>Samantha Ivy</b>
                   </td>
                   <td>
@@ -202,7 +202,7 @@
                 </tr>
                 <tr>
                   <td class="table-user">
-                    <img src="../../assets/img/theme/team-1.jpg" class="avatar rounded-circle mr-3">
+                    <img src="../../assets/img/theme/team-4.jpg" class="avatar rounded-circle mr-3">
                     <b>John Michael</b>
                   </td>
                   <td>
@@ -245,11 +245,29 @@
     <!-- Comments -->
   <div class="mb-1">
     <div class="media media-comment">
+      <img alt="Image placeholder" class="avatar avatar-lg media-comment-avatar rounded-circle" src="../../assets/img/theme/team-4.jpg">
+      <div class="media-body">
+        <div class="media-comment-text">
+          <h6 class="h5 mt-0">John Michael</h6>
+          <p class="text-sm lh-160">Tivemos dificuldades em entender a forma como iniciar a atividade, acabou sendo um pouco frustrante no inicio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="media media-comment">
       <img alt="Image placeholder" class="avatar avatar-lg media-comment-avatar rounded-circle" src="../../assets/img/theme/team-1.jpg">
       <div class="media-body">
         <div class="media-comment-text">
-          <h6 class="h5 mt-0">John Michael</h6>
-          <p class="text-sm lh-160">Amizade é um reflexo involuntário. Simplesmente acontece. Você não pode controlar.</p>
+          <h6 class="h5 mt-0">Ryan Tompson</h6>
+          <p class="text-sm lh-160">Não gostei da forma como o time se comportou inicialmente, mas com o decorrer da atividade foi possivel resolver os problemas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="media media-comment">
+      <img alt="Image placeholder" class="avatar avatar-lg media-comment-avatar rounded-circle" src="../../assets/img/theme/img-1-1000x900.jpg">
+      <div class="media-body">
+        <div class="media-comment-text">
+          <h6 class="h5 mt-0">Alexander Smith</h6>
+          <p class="text-sm lh-160">O grupo inicialmente não estava indo muito bem, mas conseguiu realizar a tarefa, com um resultado satisfatório.</p>
         </div>
       </div>
     </div>
@@ -257,26 +275,8 @@
       <img alt="Image placeholder" class="avatar avatar-lg media-comment-avatar rounded-circle" src="../../assets/img/theme/team-2-800x800.jpg">
       <div class="media-body">
         <div class="media-comment-text">
-          <h6 class="h5 mt-0">John Michael</h6>
-          <p class="text-sm lh-160">Não irrite o universo, o universo irá te estapear.</p>
-        </div>
-      </div>
-    </div>
-    <div class="media media-comment">
-      <img alt="Image placeholder" class="avatar avatar-lg media-comment-avatar rounded-circle" src="../../assets/img/theme/team-2-800x800.jpg">
-      <div class="media-body">
-        <div class="media-comment-text">
-          <h6 class="h5 mt-0">John Michael</h6>
-          <p class="text-sm lh-160">Não irrite o universo, o universo irá te estapear.</p>
-        </div>
-      </div>
-    </div>
-    <div class="media media-comment">
-      <img alt="Image placeholder" class="avatar avatar-lg media-comment-avatar rounded-circle" src="../../assets/img/theme/team-2-800x800.jpg">
-      <div class="media-body">
-        <div class="media-comment-text">
-          <h6 class="h5 mt-0">John Michael</h6>
-          <p class="text-sm lh-160">Não irrite o universo, o universo irá te estapear.</p>
+          <h6 class="h5 mt-0">Samantha Ivy</h6>
+          <p class="text-sm lh-160">Gostei do desempenho do grupo, e a atividade foi interessante de ser realizada, apesar da dificuldade.</p>
         </div>
       </div>
     </div>
@@ -315,7 +315,7 @@
         <tbody>
           <tr>
             <td class="table-user">
-              <img src="../../assets/img/theme/team-1.jpg" class="avatar rounded-circle mr-3">
+              <img src="../../assets/img/theme/team-4.jpg" class="avatar rounded-circle mr-3">
               <b>John Michael</b>
             </td>
             <td>
@@ -371,8 +371,8 @@
           </tr>
           <tr>
             <td class="table-user">
-              <img src="../../assets/img/theme/team-2.jpg" class="avatar rounded-circle mr-3">
-              <b>Alex Smith</b>
+              <img src="../../assets/img/theme/img-1-1000x900.jpg" class="avatar rounded-circle mr-3">
+              <b>Alexander Smith</b>
             </td>
             <td>
               <div class="form-group">
@@ -427,7 +427,7 @@
           </tr>
           <tr>
             <td class="table-user">
-              <img src="../../assets/img/theme/team-3.jpg" class="avatar rounded-circle mr-3">
+              <img src="../../assets/img/theme/team-2-800x800.jpg" class="avatar rounded-circle mr-3">
               <b>Samantha Ivy</b>
             </td>
             <td>
@@ -484,7 +484,7 @@
           <tr>
             <td class="table-user">
               <img src="../../assets/img/theme/team-1.jpg" class="avatar rounded-circle mr-3">
-              <b>John Michael</b>
+              <b>Ryan Tompson</b>
             </td>
             <td>
               <div class="form-group">

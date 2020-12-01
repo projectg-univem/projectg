@@ -59,4 +59,9 @@ class StudentController extends Controller
     {
         return view('student.conquest');
     }
+
+    public function getTaskEvaluate()
+    {
+        return view('student.taskEvaluate');
+    }
 }

@@ -37,6 +37,7 @@
             </div> -->
             <!-- Card body -->
             <div class="card-body">
+            <form method="POST" action="{{ route('post.teacher.registerActivitie') }}">
               <!-- List group -->
               <ul class="list-group list-group-flush list my--3">
                 <li class="list-group-item px-0">
@@ -45,41 +46,35 @@
                         <h4 class="mb-0 pb-2">
                           <a>Turma</a>
                         </h4>
-                        <form class="pb-2">
                           <select id="turma" class="form-control pb-2" data-toggle="select">
-                            <option>BCC 6 S/A</option>
-                            <option>BSI 2 S/A</option>
+                            <option value="">BCC 6 S/A</option>
+                            <option value="">BSI 2 S/A</option>
                           </select>
-                        </form>
                         <h4 class="mb-0 pb-2">
                           <a>Matéria</a>
                         </h4>
-                        <form class="pb-2">
                           <select id="materia" class="form-control pb-2" data-toggle="select">
-                            <option>Estrutura de dados</option>
-                            <option>Algoritmos</option>
+                            <option value="">Estrutura de dados</option>
+                            <option value="">Algoritmos</option>
                           </select>
-                        </form>
                         <h4 class="mb-0 pb-2">
                           <a>Tipo de tarefa</a>
                         </h4>
-                        <form class="pb-2">
                           <select id="tipoDivisao" class="form-control pb-2" data-toggle="select">
-                            <option>Em grupo</option>
-                            <option>Individual</option>
-                          </select>
-                        </form>                
+                            <option value="G">Em grupo</option>
+                            <option value="I">Individual</option>
+                          </select>             
                         <div class="row input-daterange datepicker align-items-center">
                           <div class="col">
                             <div class="form-group">
                               <label class="form-control-label">Data inicio</label>
-                              <input class="form-control" placeholder="Start date" type="text" value="06/18/2018">
+                              <input class="form-control" placeholder="Start date" id="start_date" type="text" value="">
                             </div>
                           </div>
                           <div class="col">
                             <div class="form-group">
                               <label class="form-control-label">Data fim</label>
-                              <input class="form-control" placeholder="End date" type="text" value="06/22/2018">
+                              <input class="form-control" placeholder="End date" id="end_date" type="text" value="">
                             </div>
                           </div>
                         </div>
@@ -89,11 +84,11 @@
                         <div class="col-md-12">
                           <div class="custom-control custom-radio mb-3">
                             <input name="custom-radio-1" class="custom-control-input" id="customRadio5" type="radio">
-                            <label class="custom-control-label" for="customRadio5">Alunos definirão o grupo</label>
+                            <label class="custom-control-label" for="customRadio5" value="A">Alunos definirão o grupo</label>
                           </div>
                           <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio6" checked="" type="radio">
-                            <label class="custom-control-label" for="customRadio6">Gerar grupos aleatoriamente</label>
+                            <input name="custom-radio-1" class="custom-control-input" id="generate_random_group" checked="" type="radio">
+                            <label class="custom-control-label" for="customRadio6" value="S">Gerar grupos aleatoriamente</label>
                           </div>
                         </div>
                         <h4 class="mb-0 pb-2">
@@ -101,7 +96,7 @@
                         </h4>
                         <div class="form-group row">
                           <div class="col-md-12">
-                            <input class="form-control" type="number" value="5" id="example-number-input">
+                            <input class="form-control" type="number" value="5" id="max_students">
                           </div>
                         </div>
                         <h4 class="mb-0 pb-2">
@@ -109,7 +104,7 @@
                         </h4>
                         <div class="form-group row">
                           <div class="col-md-12">
-                            <input class="form-control" type="number" value="50" id="example-number-input">
+                            <input class="form-control" type="number" value="50" id="integral_note_weight">
                           </div>
                         </div>
                       </div>
@@ -118,7 +113,7 @@
                 </li>
                 <li class="list-group-item px-0">
                   <div class="col-md-12 text-center"  style="padding-bottom: 20px;">
-                     <button type="button" class="btn btn-success">Confirmar trabalho</button>
+                     <button type="submit" class="btn btn-success">Confirmar trabalho</button>
                   </div>
 <!--<div class="row align-items-center">
                     <div class="col-auto">
@@ -183,7 +178,7 @@
                     <div class="col-md-12 pb-4 pt-4">
                       <form>
                         <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="customFileLang" lang="pt">
+                          <input type="file" class="custom-file-input" id="file_activitie" lang="pt">
                           <label class="custom-file-label" for="customFileLang">Selecionar arquivo</label>
                         </div>
                       </form>
@@ -191,8 +186,7 @@
                 </div>
             </div>
             <div class="col-xl-12">
-                <form>
-                  <div data-toggle="quill" data-quill-placeholder="Quill WYSIWYG">Implementação da Árvore B
+                  <div data-toggle="quill" data-quill-placeholder="Quill WYSIWYG" >Implementação da Árvore B
 
                     O objetivo do trabalho é a implementação das rotinas de manipulação de uma árvore B de ordem k. O trabalho deve ter uma biblioteca e duas aplicações.
                     Biblioteca:
@@ -212,7 +206,6 @@
                         search(btree T, int key) --> int - busca pela chave key e retorna o registro encontrado ou -1 se não encontrar. 
 
                     Aplicações:</div>
-                </form>
 
             </div>
           </div>
