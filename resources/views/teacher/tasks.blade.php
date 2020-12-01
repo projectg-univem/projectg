@@ -82,13 +82,12 @@
                          </div>
                     </div>
                     <div class="col-md-2">
-                            <h4 class="mb-0 pb-4">
-                              <a></a>
-                            </h4>
-                             <div class="pb-3 text-right">
-                                <button type="button" onclick="window.location='{{ route('get.teacher.getTaskCreate') }}'" class="btn btn-info">Filtrar</button>
-                             </div>
-                       
+                        <h4 class="mb-0 pb-4">
+                          <a></a>
+                        </h4>
+                         <div class="pb-3 text-right">
+                            <button type="button" onclick="" class="btn btn-info">Filtrar</button>
+                         </div>
                     </div>
                 </div>
             </div>

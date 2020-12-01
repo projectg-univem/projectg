@@ -55,3 +55,6 @@ CREATE TABLE `climber`.`historic_activity`(
   `resolved_date` DATETIME,
   `activitie_id` BIGINT(20)
 );
+
+ALTER TABLE `climber`.`activities`   
+  ADD COLUMN `discipline` VARCHAR(100) NULL AFTER `status`;

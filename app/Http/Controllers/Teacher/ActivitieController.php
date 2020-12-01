@@ -3,65 +3,58 @@
 namespace ProjectG\Http\Controllers\Teacher;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use ProjectG\Http\Controllers\Controller;
+use ProjectG\app\Models\Activitie;
 
 class ActivitieController extends Controller
 {
-    protected $authStudent;
+    protected $Activitie;
 
-    public function __construct()
+    public function __construct(Activitie $Activitie)
     {
-        $this->middleware('auth:student');
-
-        $this->middleware(function ($request, $next) {
-            $this->authStudent = Auth::guard('student')->user();
-            return $next($request);
-        });
+        $this->Activitie = $Activitie;
     }
 
-    public function getDashboard()
+    public function registerActivitie(Request $request)
     {
-        return view('student.dashboard');
+
+        $result = DB::insert('insert into activities (title,  
+                                                    description, 
+                                                    start_date, 
+                                                    end_date, 
+                                                    type, 
+                                                    max_students, 
+                                                    percentage_note_integral,
+                                                    file, 
+                                                    generate_random_group, 
+                                                    integral_note_weight, 
+                                                    id_class,
+                                                    teacher_discipline_id,
+                                                    status) 
+                                                values (?,?,?,?,?,?,?,?,?,?,?,?,?)', 
+                                                [
+                                                $dataform['turma'],
+                                                $dataform['description'],
+                                                $dataform['start_date'],
+                                                $dataform['end_date'],
+                                                $dataform['tipoDivisao'],
+                                                $dataform['max_students'],
+                                                $dataform['percentage_note_integral'],
+                                                $dataform['file_activitie'],
+                                                $dataform['generate_random_group'],
+                                                $dataform['integral_note_weight'],
+                                                $dataform['id_class'],
+                                                $dataform['teacher_discipline_id'],
+                                                'A']);
+
+        if($result){
+            $return = 'Atividade Criada com sucesso!'
+        }else{
+            $return = 'Ocorreu um erro algo criar a atividade, contate nosso suporte!'
+        }
+        return $dataform;
+        ///return view('teacher.taskCreate', ['resp' => $result]);
     }
 
-    public function getTasks()
-    {
-    	return view('student.tasks');
-    }
-
-	public function getProfile()
-    {
-    	return view('student.profile');
-    }
-
-    public function getQuestions()
-    {
-    	return view('student.questions');
-    }
-
-    public function getTaskGrupo()
-    {
-        return view('student.taskGrupo');
-    }
-
-    public function getCalendar() 
-    {
-        return view('student.calendar');
-    }
-
-    public function getReports()
-    {
-        return view('student.reports');
-    }
-
-    public function getConquest()
-    {
-        return view('student.conquest');
-    }
-
-    public function getTaskEvaluate()
-    {
-        return view('student.taskEvaluate');
-    }
 }
