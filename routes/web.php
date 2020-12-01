@@ -43,7 +43,7 @@ Route::prefix('professor')->group(function() {
         Route::get('/tarefas/modelo/grupo', 'Teacher\TeacherController@getTaskGrupo')->name('get.teacher.getTaskGrupo');
         Route::get('/tarefas/criar', 'Teacher\TeacherController@getTaskCreate')->name('get.teacher.getTaskCreate');
         Route::get('/tarefas/avaliar', 'Teacher\TeacherController@getTaskEvaluate')->name('get.teacher.getTaskEvaluate');
-        Route::post('/tarefas/criar', 'Teacher\ActivitieController@registerActivitie')->name('get.teacher.registerActivitie');
+        Route::post('/tarefas/criar/registra', 'Teacher\ActivitieController@registerActivitie')->name('post.teacher.registerActivitie');
 
         // Profile
         Route::get('/perfil', 'Teacher\TeacherController@getProfile')->name('get.teacher.profile');

@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Activitie extends Model
 {
     
-    protected $table = 'activitie';
+    protected $guard = 'activitie';
+
+    protected $table = 'activities';
 
 }

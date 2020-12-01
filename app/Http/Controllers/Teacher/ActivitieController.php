@@ -5,19 +5,20 @@ namespace ProjectG\Http\Controllers\Teacher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use ProjectG\Http\Controllers\Controller;
-use ProjectG\app\Models\Activitie;
+//use ProjectG\app\Models\Activitie;
 
 class ActivitieController extends Controller
 {
-    protected $Activitie;
+    // protected $Activitie;
 
-    public function __construct(Activitie $Activitie)
-    {
-        $this->Activitie = $Activitie;
-    }
+    // public function __construct(Activitie $activitie)
+    // {
+    //     $this->Activitie = $activitie;
+    // }
 
     public function registerActivitie(Request $request)
     {
+        dd($request->all());
 
         $result = DB::insert('insert into activities (title,  
                                                     description, 
@@ -49,9 +50,9 @@ class ActivitieController extends Controller
                                                 'A']);
 
         if($result){
-            $return = 'Atividade Criada com sucesso!'
+            $return = 'Atividade Criada com sucesso!';
         }else{
-            $return = 'Ocorreu um erro algo criar a atividade, contate nosso suporte!'
+            $return = 'Ocorreu um erro algo criar a atividade, contate nosso suporte!';
         }
         return $dataform;
         ///return view('teacher.taskCreate', ['resp' => $result]);

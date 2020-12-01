@@ -37,6 +37,7 @@
             </div> -->
             <!-- Card body -->
             <div class="card-body">
+            <form method="POST" action="{{ route('post.teacher.registerActivitie') }}">
               <!-- List group -->
               <ul class="list-group list-group-flush list my--3">
                 <li class="list-group-item px-0">
@@ -45,30 +46,24 @@
                         <h4 class="mb-0 pb-2">
                           <a>Turma</a>
                         </h4>
-                        <form class="pb-2">
                           <select id="turma" class="form-control pb-2" data-toggle="select">
                             <option value="">BCC 6 S/A</option>
                             <option value="">BSI 2 S/A</option>
                           </select>
-                        </form>
                         <h4 class="mb-0 pb-2">
                           <a>Matéria</a>
                         </h4>
-                        <form class="pb-2">
                           <select id="materia" class="form-control pb-2" data-toggle="select">
                             <option value="">Estrutura de dados</option>
                             <option value="">Algoritmos</option>
                           </select>
-                        </form>
                         <h4 class="mb-0 pb-2">
                           <a>Tipo de tarefa</a>
                         </h4>
-                        <form class="pb-2">
                           <select id="tipoDivisao" class="form-control pb-2" data-toggle="select">
                             <option value="G">Em grupo</option>
                             <option value="I">Individual</option>
-                          </select>
-                        </form>                
+                          </select>             
                         <div class="row input-daterange datepicker align-items-center">
                           <div class="col">
                             <div class="form-group">
@@ -118,7 +113,7 @@
                 </li>
                 <li class="list-group-item px-0">
                   <div class="col-md-12 text-center"  style="padding-bottom: 20px;">
-                     <button type="button" class="btn btn-success" href="{{ route('get.teacher.registerActivitie') }}">Confirmar trabalho</button>
+                     <button type="submit" class="btn btn-success">Confirmar trabalho</button>
                   </div>
 <!--<div class="row align-items-center">
                     <div class="col-auto">
@@ -191,7 +186,6 @@
                 </div>
             </div>
             <div class="col-xl-12">
-                <form>
                   <div data-toggle="quill" data-quill-placeholder="Quill WYSIWYG" >Implementação da Árvore B
 
                     O objetivo do trabalho é a implementação das rotinas de manipulação de uma árvore B de ordem k. O trabalho deve ter uma biblioteca e duas aplicações.
@@ -212,7 +206,6 @@
                         search(btree T, int key) --> int - busca pela chave key e retorna o registro encontrado ou -1 se não encontrar. 
 
                     Aplicações:</div>
-                </form>
 
             </div>
           </div>
